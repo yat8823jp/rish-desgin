@@ -1,2 +1,2 @@
-#Rsh-Desgin
+#Rish-Desgin
 responsive desgin
