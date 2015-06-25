@@ -64,40 +64,52 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 94, ../scss/main.scss */
+@font-face {
+  font-family: mplus-1p-regular;
+  src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf) format("truetype");
+}
+/* line 100, ../scss/main.scss */
 html {
   width: 100%;
   font-size: 62.5%;
   /*10px */
   /* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
+  font-family: mplus-1p-regular;
 }
-@font-face {
-  /* line 94, ../scss/main.scss */
-  html {
-    font-family: mplus-1p-regular;
-    src: url("http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf") format("truetype");
-  }
-}
-/* line 104, ../scss/main.scss */
+
+/* line 107, ../scss/main.scss */
 body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 109, ../scss/main.scss */
-.wrap {
-  height: 2000px;
+/* line 112, ../scss/main.scss */
+article.wrap {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
 }
 
-/* line 117, ../scss/main.scss */
+/* line 119, ../scss/main.scss */
+.content {
+  width: 860px;
+  height: auto;
+  top: 230px;
+  left: 50%;
+  margin-left: -430px;
+  position: absolute;
+}
+
+/* line 130, ../scss/main.scss */
 .sec1 {
   width: 100%;
   height: 680px;
   /* height: 380px; */
-  background: url(../img/sec_1_bg.png);
+  background: url(../img/sec1_bg.png);
   position: relative;
 }
-/* line 123, ../scss/main.scss */
+/* line 136, ../scss/main.scss */
 .sec1 h1.logo {
   top: 50%;
   left: 50%;
@@ -105,8 +117,183 @@ body {
   position: absolute;
 }
 
-/* line 134, ../scss/main.scss */
+/* line 147, ../scss/main.scss */
 .sec2 {
+  width: 100%;
+  height: 782px;
+  background: url(../img/sec2_bg.png);
+  background-size: cover;
   /* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
+  font-family: mplus-1p-regular;
+  color: #fff;
   font-size: 2.0rem;
+  position: relative;
+}
+/* line 157, ../scss/main.scss */
+.sec2 h1.logo {
+  top: 80px;
+  left: 50%;
+  margin: 0 auto auto -347px;
+  position: relative;
+}
+/* line 164, ../scss/main.scss */
+.sec2 .l-img-r-content .left {
+  float: left;
+  margin-right: 30px;
+}
+/* line 167, ../scss/main.scss */
+.sec2 .l-img-r-content .left img.photo {
+  /* display: none; */
+}
+/* line 168, ../scss/main.scss */
+.sec2 .l-img-r-content .left ul.sns-ico {
+  margin-top: 10px;
+  vertical-align: middle;
+}
+/* line 171, ../scss/main.scss */
+.sec2 .l-img-r-content .left ul.sns-ico li {
+  margin-right: 10px;
+  display: inline;
+}
+/* line 172, ../scss/main.scss */
+.sec2 .l-img-r-content .left ul.sns-ico li.ico-twitter a {
+  width: 29px;
+  height: 24px;
+}
+/* line 173, ../scss/main.scss */
+.sec2 .l-img-r-content .left ul.sns-ico li.ico-facebook a {
+  width: 25px;
+  height: 25px;
+}
+/* line 176, ../scss/main.scss */
+.sec2 .l-img-r-content .right {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  overflow: hidden;
+}
+/* line 180, ../scss/main.scss */
+.sec2 .l-img-r-content .right h2, .sec2 .l-img-r-content .right dt {
+  font-weight: bold;
+}
+/* line 181, ../scss/main.scss */
+.sec2 .l-img-r-content .right h2 {
+  margin-top: 30px;
+}
+/* line 182, ../scss/main.scss */
+.sec2 .l-img-r-content .right dl {
+  margin-top: 20px;
+}
+/* line 184, ../scss/main.scss */
+.sec2 .l-img-r-content .right dl dt {
+  margin-top: 10px;
+}
+/* line 185, ../scss/main.scss */
+.sec2 .l-img-r-content .right dl dd {
+  display: inline;
+}
+/* line 186, ../scss/main.scss */
+.sec2 .l-img-r-content .right dl dt + dd {
+  margin-left: 15px;
+}
+
+/* line 195, ../scss/main.scss */
+.sec3 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+  background: url(../img/sec3_bg.png);
+  font-family: mplus-1p-regular;
+  font-size: 2.0rem;
+  position: relative;
+}
+/* line 203, ../scss/main.scss */
+.sec3 h1.logo {
+  top: 80px;
+  left: 50%;
+  margin: 0 auto auto -376px;
+  position: absolute;
+}
+
+/* line 215, ../scss/main.scss */
+.sec4 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+  background: url(../img/sec4_bg.png);
+  font-family: mplus-1p-regular;
+  font-size: 2.0rem;
+  position: relative;
+}
+/* line 223, ../scss/main.scss */
+.sec4 h1.logo {
+  top: 80px;
+  left: 50%;
+  margin: 0 auto auto -376px;
+  position: absolute;
+}
+
+/* line 235, ../scss/main.scss */
+.sec5 {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 80px;
+  background: url(../img/sec5_bg.png);
+  font-family: mplus-1p-regular;
+  font-size: 2.0rem;
+  position: relative;
+}
+/* line 243, ../scss/main.scss */
+.sec5 h1.logo {
+  top: 80px;
+  left: 50%;
+  margin: 0 auto auto -355px;
+  position: absolute;
+}
+
+/* line 254, ../scss/main.scss */
+footer {
+  width: 100%;
+  height: 260px;
+  background: url(../img/sec1_bg.png);
+  color: #fffac6;
+  font-size: 1.6rem;
+  position: relative;
+  display: block;
+}
+/* line 262, ../scss/main.scss */
+footer ul.ft-menu {
+  width: 420px;
+  top: 20px;
+  left: 50%;
+  position: absolute;
+  margin-left: -210px;
+}
+/* line 268, ../scss/main.scss */
+footer ul.ft-menu li {
+  display: inline;
+  vertical-align: middle;
+}
+/* line 270, ../scss/main.scss */
+footer ul.ft-menu a:link, footer ul.ft-menu avisited {
+  color: #fffac6;
+}
+/* line 271, ../scss/main.scss */
+footer ul.ft-menu a:hover {
+  color: #fff;
+}
+/* line 274, ../scss/main.scss */
+footer h1.logo {
+  top: 80px;
+  left: 50%;
+  margin: 0 auto auto -138px;
+  position: absolute;
+}
+/* line 281, ../scss/main.scss */
+footer address.copyright {
+  width: 220px;
+  margin-left: -110px;
+  top: 230px;
+  left: 50%;
+  font-size: 1.4rem;
+  position: relative;
 }

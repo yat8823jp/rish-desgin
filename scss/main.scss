@@ -6,12 +6,12 @@
 //Var
 //------------------------------------------------------//
 $main-color: #26b1d2;
+$gold-color: #fffac6;
+$gold-color-hover: #fff;
 
 $link: #0e89a6;
 $hover: #95e5fa;
 
-$bgblue-link: #fff;
-$bgblue-hover: #95e5fa;
 
 //media-query
 $query-pc: 481px;
@@ -91,14 +91,17 @@ $query-sm: 320px;
 	a{ color: #fff; text-decoration: none; }
 }
 
+@font-face{
+	font-family: mplus-1p-regular;
+	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf) format("truetype");
+}//font-face
+
+
 html{
 	width: 100%;
 	font-size: 62.5%; /*10px */
 	/* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
-	@font-face{
-		font-family: mplus-1p-regular;
-		src: url('http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf') format("truetype");
-	}//font-face
+	font-family: mplus-1p-regular;
 }
 
 body{
@@ -106,11 +109,21 @@ body{
 	overflow-x: hidden;
 }
 
-.wrap{
-	height: 2000px;
+article.wrap{
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
 }
 
-
+.content{
+	width: 860px;
+	height: auto;
+	top: 230px;
+	left: 50%;
+	margin-left: -430px;
+	position: absolute;
+}
 //-------------------------------------------------------
 //.sec1
 //-------------------------------------------------------
@@ -118,7 +131,7 @@ body{
 	width: 100%;
 	height: 680px;
 	/* height: 380px; */
-	background: url(../img/sec_1_bg.png);
+	background: url(../img/sec1_bg.png);
 	position: relative;
 	h1.logo{
 		top: 50%;
@@ -132,6 +145,145 @@ body{
 //.sec2
 //-------------------------------------------------------
 .sec2{
+	width: 100%;
+	height: 782px;
+	background: url(../img/sec2_bg.png);
+	background-size: cover;
 	/* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
+	font-family: mplus-1p-regular;
+	color: #fff;
 	font-size: 2.0rem;
+	position: relative;
+	h1.logo{
+		top: 80px;
+		left: 50%;
+		margin: 0 auto auto -347px;
+		position: relative;
+	}//h1.logo
+	.l-img-r-content{
+		.left{
+			float: left;
+			margin-right: 30px;
+			img.photo{/* display: none; */}
+			ul.sns-ico{
+				margin-top: 10px;
+				vertical-align: middle;
+				li{ margin-right: 10px; display: inline; }
+				li.ico-twitter a{ width:29px; height: 24px; }
+				li.ico-facebook a{ width:25px; height: 25px; }
+			}
+		}
+		.right{
+			font-size: 1.6rem;
+			line-height: 1.6;
+			overflow: hidden;
+			h2,dt{ font-weight: bold;}
+			h2{ margin-top: 30px; }
+			dl{
+				margin-top: 20px;
+				dt{ margin-top: 10px; }
+				dd{ display: inline; }
+				dt+dd{ margin-left: 15px; }
+			}
+		}
+	}
 }//.sec2
+
+//-------------------------------------------------------
+//.sec3
+//-------------------------------------------------------
+.sec3{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 80px;
+	background: url(../img/sec3_bg.png);
+	font-family: mplus-1p-regular;
+	font-size: 2.0rem;
+	position: relative;
+	h1.logo{
+		top: 80px;
+		left: 50%;
+		margin: 0 auto auto -376px;
+		position: absolute;
+	}//h1.logo
+}//.sec3
+
+
+//-------------------------------------------------------
+//.sec4
+//-------------------------------------------------------
+.sec4{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 80px;
+	background: url(../img/sec4_bg.png);
+	font-family: mplus-1p-regular;
+	font-size: 2.0rem;
+	position: relative;
+	h1.logo{
+		top: 80px;
+		left: 50%;
+		margin: 0 auto auto -376px;
+		position: absolute;
+	}//h1.logo
+}//.sec4
+
+
+//-------------------------------------------------------
+//.sec5
+//-------------------------------------------------------
+.sec5{
+	width: 100%;
+	height: 100%;
+	padding-bottom: 80px;
+	background: url(../img/sec5_bg.png);
+	font-family: mplus-1p-regular;
+	font-size: 2.0rem;
+	position: relative;
+	h1.logo{
+		top: 80px;
+		left: 50%;
+		margin: 0 auto auto -355px;
+		position: absolute;
+	}//h1.logo
+}//.sec5
+
+//-------------------------------------------------------
+//footer
+//-------------------------------------------------------
+footer{
+	width: 100%;
+	height: 260px;
+	background: url(../img/sec1_bg.png);
+	color: $gold-color;
+	font-size: 1.6rem;
+	position: relative;
+	display: block;
+	ul.ft-menu{
+		width: 420px;
+		top: 20px;
+		left: 50%;
+		position: absolute;
+		margin-left: -210px;
+		li{ display: inline; vertical-align: middle;}
+		a{
+			&:link,&visited{ color: $gold-color; }
+			&:hover{ color: $gold-color-hover; }
+		}
+	}
+	h1.logo{
+		top: 80px;
+		left: 50%;
+		margin: 0 auto auto -138px;
+		position: absolute;
+	}//h1.logo
+
+	address.copyright{
+		width: 220px;
+		margin-left: -110px;
+		top: 230px;
+		left: 50%;
+		font-size: 1.4rem;
+		position: relative;
+	}//address.copyright
+}//footer
