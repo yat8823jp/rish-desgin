@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 5, ../../../../../.rvm/gems/ruby-2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -66,42 +65,61 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 @font-face {
   font-family: mplus-1p-regular;
-  src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf) format("truetype");
+  src: url("../fonts/mplus-1p-regular.ttf") format("truetype");
 }
-/* line 100, ../scss/main.scss */
+@font-face {
+  font-family: mplus-2c-thin;
+  src: url("../fonts/mplus-2c-thin.ttf") format("truetype");
+}
+@font-face {
+  font-family: mplus-2c-medium;
+  src: url("../fonts/mplus-2c-medium.ttf") format("truetype");
+}
+/* line 112, ../scss/main.scss */
 html {
   width: 100%;
   font-size: 62.5%;
   /*10px */
-  /* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
   font-family: mplus-1p-regular;
 }
 
-/* line 107, ../scss/main.scss */
+/* line 118, ../scss/main.scss */
 body {
   width: 100%;
   overflow-x: hidden;
 }
 
-/* line 112, ../scss/main.scss */
+/* line 123, ../scss/main.scss */
 article.wrap {
   width: 100%;
   height: 100%;
-  display: block;
+  min-height: 100%;
   position: relative;
 }
 
-/* line 119, ../scss/main.scss */
-.content {
-  width: 860px;
-  height: auto;
-  top: 230px;
-  left: 50%;
-  margin-left: -430px;
-  position: absolute;
+/* line 134, ../scss/main.scss */
+h1.headline {
+  padding-top: 80px;
+  text-align: center;
 }
 
-/* line 130, ../scss/main.scss */
+/* line 139, ../scss/main.scss */
+.content {
+  width: 860px;
+  margin: 60px auto 0 auto;
+}
+/* line 143, ../scss/main.scss */
+.content .sec-copy {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+/* line 149, ../scss/main.scss */
+.slider {
+  text-align: center;
+}
+
+/* line 156, ../scss/main.scss */
 .sec1 {
   width: 100%;
   height: 680px;
@@ -109,7 +127,7 @@ article.wrap {
   background: url(../img/sec1_bg.png);
   position: relative;
 }
-/* line 136, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .sec1 h1.logo {
   top: 50%;
   left: 50%;
@@ -117,178 +135,319 @@ article.wrap {
   position: absolute;
 }
 
-/* line 147, ../scss/main.scss */
+/* line 173, ../scss/main.scss */
 .sec2 {
   width: 100%;
-  height: 782px;
+  /* height: 782px; */
+  height: auto;
+  min-height: 100%;
+  padding-bottom: 80px;
   background: url(../img/sec2_bg.png);
   background-size: cover;
-  /* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
-  font-family: mplus-1p-regular;
+  font-family: 'mplus-2c-thin', sans-serif;
   color: #fff;
   font-size: 2.0rem;
   position: relative;
 }
-/* line 157, ../scss/main.scss */
-.sec2 h1.logo {
-  top: 80px;
-  left: 50%;
-  margin: 0 auto auto -347px;
-  position: relative;
-}
-/* line 164, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 .sec2 .l-img-r-content .left {
   float: left;
   margin-right: 30px;
 }
-/* line 167, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 .sec2 .l-img-r-content .left img.photo {
   /* display: none; */
 }
-/* line 168, ../scss/main.scss */
+/* line 190, ../scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico {
   margin-top: 10px;
   vertical-align: middle;
 }
-/* line 171, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico li {
   margin-right: 10px;
   display: inline;
 }
-/* line 172, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico li.ico-twitter a {
   width: 29px;
   height: 24px;
 }
-/* line 173, ../scss/main.scss */
+/* line 195, ../scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico li.ico-facebook a {
   width: 25px;
   height: 25px;
 }
-/* line 176, ../scss/main.scss */
+/* line 198, ../scss/main.scss */
 .sec2 .l-img-r-content .right {
-  font-size: 1.6rem;
-  line-height: 1.6;
   overflow: hidden;
 }
-/* line 180, ../scss/main.scss */
+/* line 200, ../scss/main.scss */
 .sec2 .l-img-r-content .right h2, .sec2 .l-img-r-content .right dt {
   font-weight: bold;
 }
-/* line 181, ../scss/main.scss */
+/* line 201, ../scss/main.scss */
 .sec2 .l-img-r-content .right h2 {
   margin-top: 30px;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
-/* line 182, ../scss/main.scss */
+/* line 202, ../scss/main.scss */
 .sec2 .l-img-r-content .right dl {
   margin-top: 20px;
 }
-/* line 184, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 .sec2 .l-img-r-content .right dl dt {
-  margin-top: 10px;
+  margin: 10px 0;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
-/* line 185, ../scss/main.scss */
+/* line 205, ../scss/main.scss */
 .sec2 .l-img-r-content .right dl dd {
   display: inline;
+  font-size: 1.6rem;
+  line-height: 1.6;
 }
-/* line 186, ../scss/main.scss */
+/* line 206, ../scss/main.scss */
 .sec2 .l-img-r-content .right dl dt + dd {
   margin-left: 15px;
 }
+/* line 209, ../scss/main.scss */
+.sec2 .l-img-r-content:after {
+  content: "";
+  display: block;
+  clear: both;
+}
 
-/* line 195, ../scss/main.scss */
+/* line 216, ../scss/main.scss */
 .sec3 {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   padding-bottom: 80px;
   background: url(../img/sec3_bg.png);
   font-family: mplus-1p-regular;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   position: relative;
 }
-/* line 203, ../scss/main.scss */
-.sec3 h1.logo {
-  top: 80px;
-  left: 50%;
-  margin: 0 auto auto -376px;
-  position: absolute;
+/* line 226, ../scss/main.scss */
+.sec3 h2.sec3-h2 {
+  margin-top: 60px;
+  padding: 24px 0 24px 24px;
+  font-size: 2.0rem;
+  line-height: 2.0;
+  font-weight: bold;
+  color: #720000;
+  border-top: 2px solid #720000;
+  border-bottom: 2px solid #720000;
+}
+/* line 237, ../scss/main.scss */
+.sec3 table.price-table {
+  width: 690px;
+  margin: 20px auto auto auto;
+  position: relative;
+}
+/* line 242, ../scss/main.scss */
+.sec3 table.price-table tr td.price-headline {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  color: #720000;
+  border: none;
+  border-bottom: 2px solid #720000;
+}
+/* line 249, ../scss/main.scss */
+.sec3 table.price-table tr td {
+  font-size: 1.6rem;
+  line-height: 1.6;
+  padding: 20px;
+  border: 1px dotted #720000;
+}
+/* line 255, ../scss/main.scss */
+.sec3 table.price-table tr td:first-child {
+  border-left: none;
+}
+/* line 256, ../scss/main.scss */
+.sec3 table.price-table tr td:last-child {
+  border-right: none;
 }
 
-/* line 215, ../scss/main.scss */
+/* line 277, ../scss/main.scss */
 .sec4 {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   padding-bottom: 80px;
   background: url(../img/sec4_bg.png);
   font-family: mplus-1p-regular;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   position: relative;
 }
-/* line 223, ../scss/main.scss */
-.sec4 h1.logo {
-  top: 80px;
-  left: 50%;
-  margin: 0 auto auto -376px;
-  position: absolute;
+/* line 287, ../scss/main.scss */
+.sec4 .portfolio-main {
+  margin-top: 60px;
+}
+/* line 289, ../scss/main.scss */
+.sec4 .portfolio-main:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* line 291, ../scss/main.scss */
+.sec4 .portfolio-main .portfolio-main-1 {
+  width: 396px;
+  float: left;
+}
+/* line 295, ../scss/main.scss */
+.sec4 .portfolio-main .portfolio-main-2 {
+  width: 396px;
+  margin-top: 120px;
+  float: right;
+}
+/* line 301, ../scss/main.scss */
+.sec4 .portfolio-main dl.comment {
+  height: auto;
+  padding: 20px;
+  margin: 20px auto auto auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 302, ../scss/main.scss */
+.sec4 .portfolio-main dl.comment dt {
+  width: 274px;
+  background: url(../img/portfolio/portfolio-main-comment-bg.png) repeat-y;
+}
+/* line 273, ../scss/main.scss */
+.sec4 .portfolio-main dl.comment dt {
+  margin: auto auto 20px auto;
+  padding: 20px;
+  font-size: 1.6rem;
+  color: #93721c;
+  text-shadow: -1px -1px 0 #000;
+  line-height: 1.4;
+  border-bottom: 1px solid #5d4710;
+  box-sizing: border-box;
+}
+/* line 274, ../scss/main.scss */
+.sec4 .portfolio-main dl.comment dd {
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* line 308, ../scss/main.scss */
+.sec4 .portfolio-sub {
+  margin: 60px;
+  margin-left: -60px;
+  display: inline-block;
+}
+/* line 312, ../scss/main.scss */
+.sec4 .portfolio-sub:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+/* line 314, ../scss/main.scss */
+.sec4 .portfolio-sub .portfolio-sub-item {
+  width: 222px;
+  text-align: center;
+  margin-left: 60px;
+  float: left;
+}
+/* line 321, ../scss/main.scss */
+.sec4 .portfolio-sub dl.comment {
+  height: auto;
+  padding: 20px;
+  margin: 20px auto auto auto;
+  text-align: center;
+  box-sizing: border-box;
+}
+/* line 322, ../scss/main.scss */
+.sec4 .portfolio-sub dl.comment dt {
+  margin: auto;
+  background: url(../img/portfolio/portfolio-sub-comment-bg.png) repeat-y;
+}
+/* line 273, ../scss/main.scss */
+.sec4 .portfolio-sub dl.comment dt {
+  margin: auto auto 20px auto;
+  padding: 20px;
+  font-size: 1.6rem;
+  color: #93721c;
+  text-shadow: -1px -1px 0 #000;
+  line-height: 1.4;
+  border-bottom: 1px solid #5d4710;
+  box-sizing: border-box;
+}
+/* line 274, ../scss/main.scss */
+.sec4 .portfolio-sub dl.comment dd {
+  padding: 20px;
+  background: #fff;
+  color: #333;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
 }
 
-/* line 235, ../scss/main.scss */
+/* line 334, ../scss/main.scss */
 .sec5 {
   width: 100%;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   padding-bottom: 80px;
   background: url(../img/sec5_bg.png);
   font-family: mplus-1p-regular;
-  font-size: 2.0rem;
+  font-size: 1.6rem;
   position: relative;
 }
-/* line 243, ../scss/main.scss */
-.sec5 h1.logo {
-  top: 80px;
-  left: 50%;
-  margin: 0 auto auto -355px;
-  position: absolute;
-}
 
-/* line 254, ../scss/main.scss */
+/* line 348, ../scss/main.scss */
 footer {
   width: 100%;
   height: 260px;
+  /* 	height: auto;
+  min-height: 100%;
+   */
   background: url(../img/sec1_bg.png);
   color: #fffac6;
   font-size: 1.6rem;
+  bottom: 0;
   position: relative;
-  display: block;
 }
-/* line 262, ../scss/main.scss */
+/* line 359, ../scss/main.scss */
 footer ul.ft-menu {
-  width: 420px;
+  width: 500px;
   top: 20px;
   left: 50%;
   position: absolute;
-  margin-left: -210px;
+  margin-left: -250px;
 }
-/* line 268, ../scss/main.scss */
+/* line 365, ../scss/main.scss */
 footer ul.ft-menu li {
   display: inline;
   vertical-align: middle;
+  font-family: mplus-2c-medium;
 }
-/* line 270, ../scss/main.scss */
+/* line 367, ../scss/main.scss */
 footer ul.ft-menu a:link, footer ul.ft-menu avisited {
   color: #fffac6;
 }
-/* line 271, ../scss/main.scss */
+/* line 368, ../scss/main.scss */
 footer ul.ft-menu a:hover {
   color: #fff;
 }
-/* line 274, ../scss/main.scss */
+/* line 371, ../scss/main.scss */
 footer h1.logo {
   top: 80px;
   left: 50%;
   margin: 0 auto auto -138px;
   position: absolute;
 }
-/* line 281, ../scss/main.scss */
+/* line 378, ../scss/main.scss */
 footer address.copyright {
   width: 220px;
   margin-left: -110px;

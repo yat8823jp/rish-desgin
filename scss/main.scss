@@ -93,14 +93,25 @@ $query-sm: 320px;
 
 @font-face{
 	font-family: mplus-1p-regular;
-	src: url(http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-regular.ttf) format("truetype");
+	src: url('../fonts/mplus-1p-regular.ttf')
+	format("truetype");
 }//font-face
 
+@font-face{
+	font-family: mplus-2c-thin;
+	src: url('../fonts/mplus-2c-thin.ttf')
+	format("truetype");
+}//font-face
+
+@font-face{
+	font-family: mplus-2c-medium;
+	src: url('../fonts/mplus-2c-medium.ttf')
+	format("truetype");
+}//font-face
 
 html{
 	width: 100%;
 	font-size: 62.5%; /*10px */
-	/* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
 	font-family: mplus-1p-regular;
 }
 
@@ -112,18 +123,33 @@ body{
 article.wrap{
 	width: 100%;
 	height: 100%;
-	display: block;
+	min-height: 100%;
 	position: relative;
 }
 
+//-------------------------------------------------------
+//.sec共通
+//-------------------------------------------------------
+
+h1.headline{
+	padding-top: 80px;
+	text-align: center;
+}//h1.headline
+
 .content{
 	width: 860px;
-	height: auto;
-	top: 230px;
-	left: 50%;
-	margin-left: -430px;
-	position: absolute;
+	margin: 60px auto 0 auto;
+
+	.sec-copy{
+		font-size: 1.6rem;
+		line-height: 1.8;
+	}
 }
+
+.slider{
+	text-align: center;
+}
+
 //-------------------------------------------------------
 //.sec1
 //-------------------------------------------------------
@@ -146,20 +172,16 @@ article.wrap{
 //-------------------------------------------------------
 .sec2{
 	width: 100%;
-	height: 782px;
+ 	/* height: 782px; */
+	height: auto;
+	min-height: 100%;
+	padding-bottom: 80px;
 	background: url(../img/sec2_bg.png);
 	background-size: cover;
-	/* font-family: "メイリオ", Meiryo,"ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",Arial,"ＭＳ Ｐゴシック","MS PGothic",Osaka,sans-serif; */
-	font-family: mplus-1p-regular;
+	font-family: 'mplus-2c-thin', sans-serif;
 	color: #fff;
 	font-size: 2.0rem;
 	position: relative;
-	h1.logo{
-		top: 80px;
-		left: 50%;
-		margin: 0 auto auto -347px;
-		position: relative;
-	}//h1.logo
 	.l-img-r-content{
 		.left{
 			float: left;
@@ -174,18 +196,17 @@ article.wrap{
 			}
 		}
 		.right{
-			font-size: 1.6rem;
-			line-height: 1.6;
 			overflow: hidden;
-			h2,dt{ font-weight: bold;}
-			h2{ margin-top: 30px; }
+			h2,dt{ font-weight: bold; }
+			h2{ margin-top: 30px; font-size: 1.6rem; line-height: 1.6; }
 			dl{
 				margin-top: 20px;
-				dt{ margin-top: 10px; }
-				dd{ display: inline; }
+				dt{ margin: 10px 0; font-size: 1.6rem; line-height: 1.6; }
+				dd{ display: inline; font-size: 1.6rem; line-height: 1.6; }
 				dt+dd{ margin-left: 15px; }
 			}
 		}
+		&:after{ @include beforeafter; clear: both;}
 	}
 }//.sec2
 
@@ -194,38 +215,116 @@ article.wrap{
 //-------------------------------------------------------
 .sec3{
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	padding-bottom: 80px;
 	background: url(../img/sec3_bg.png);
 	font-family: mplus-1p-regular;
-	font-size: 2.0rem;
+	font-size: 1.6rem;
 	position: relative;
-	h1.logo{
-		top: 80px;
-		left: 50%;
-		margin: 0 auto auto -376px;
-		position: absolute;
-	}//h1.logo
+
+	h2.sec3-h2{
+		margin-top: 60px;
+		padding: 24px 0 24px 24px;
+		font-size: 2.0rem;
+		line-height: 2.0;
+		font-weight: bold;
+		color: #720000;
+		border-top: 2px solid #720000;
+		border-bottom: 2px solid #720000;
+	}//.sec3-h2
+
+	table.price-table{
+		width:690px;
+		margin: 20px auto auto auto;
+		position: relative;
+		tr{
+			td.price-headline{
+				font-size: 1.8rem;
+				line-height: 1.8;
+				color: #720000;
+				border: none;
+				border-bottom: 2px solid #720000;
+			}//td
+			td{
+				font-size: 1.6rem;
+				line-height: 1.6;
+				padding: 20px;
+				border: 1px dotted #720000;
+			}
+			td:first-child{ border-left: none; }
+			td:last-child{ border-right: none; }
+		}//tr
+
+	}
 }//.sec3
 
 
 //-------------------------------------------------------
 //.sec4
 //-------------------------------------------------------
+@mixin portfolio-comment{
+	height: auto;
+	padding: 20px;
+	margin: 20px auto auto auto;
+	text-align: center;
+	box-sizing: border-box;
+
+	dt{ margin: auto auto 20px auto; padding: 20px; font-size: 1.6rem; color: #93721c; text-shadow: -1px -1px 0 #000; line-height: 1.4; border-bottom: 1px solid #5d4710; box-sizing: border-box; }
+	dd{ padding: 20px; background: #fff; color: #333; font-size: 1.4rem; line-height: 1.5; border-right: 1px solid #ccc; border-bottom: 1px solid #ccc; box-sizing: border-box; }
+}//portfolio-comment{
+
 .sec4{
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	padding-bottom: 80px;
 	background: url(../img/sec4_bg.png);
 	font-family: mplus-1p-regular;
-	font-size: 2.0rem;
+	font-size: 1.6rem;
 	position: relative;
-	h1.logo{
-		top: 80px;
-		left: 50%;
-		margin: 0 auto auto -376px;
-		position: absolute;
-	}//h1.logo
+
+	.portfolio-main{
+		margin-top: 60px;
+		&:after{ @include clearfix; }
+
+		.portfolio-main-1{
+			width: 396px;
+			float: left;
+		}
+		.portfolio-main-2{
+			width: 396px;
+			margin-top: 120px;
+			float: right;
+		}
+
+		dl.comment{
+			dt{ width: 274px; background: url(../img/portfolio/portfolio-main-comment-bg.png) repeat-y; }
+			@include portfolio-comment;
+		}//.dl.comment
+
+	}//.portfolio-main
+
+	.portfolio-sub{
+		margin: 60px;
+		margin-left: -60px;
+		display: inline-block;
+		&:after{ @include clearfix; }
+
+		.portfolio-sub-item{
+			width: 222px;
+			text-align: center;
+			margin-left: 60px;
+			float: left;
+		}//.portfolio-sub-item
+
+		dl.comment{
+			dt{ margin: auto; background: url(../img/portfolio/portfolio-sub-comment-bg.png) repeat-y; }
+			@include portfolio-comment;
+		}//.dl.comment
+
+	}//.portfolio-main
+
 }//.sec4
 
 
@@ -234,18 +333,13 @@ article.wrap{
 //-------------------------------------------------------
 .sec5{
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	padding-bottom: 80px;
 	background: url(../img/sec5_bg.png);
 	font-family: mplus-1p-regular;
-	font-size: 2.0rem;
+	font-size: 1.6rem;
 	position: relative;
-	h1.logo{
-		top: 80px;
-		left: 50%;
-		margin: 0 auto auto -355px;
-		position: absolute;
-	}//h1.logo
 }//.sec5
 
 //-------------------------------------------------------
@@ -254,18 +348,21 @@ article.wrap{
 footer{
 	width: 100%;
 	height: 260px;
+/* 	height: auto;
+min-height: 100%;
+ */
 	background: url(../img/sec1_bg.png);
 	color: $gold-color;
 	font-size: 1.6rem;
+	bottom: 0;
 	position: relative;
-	display: block;
 	ul.ft-menu{
-		width: 420px;
+		width: 500px;
 		top: 20px;
 		left: 50%;
 		position: absolute;
-		margin-left: -210px;
-		li{ display: inline; vertical-align: middle;}
+		margin-left: -250px;
+		li{ display: inline; vertical-align: middle; font-family: mplus-2c-medium; }
 		a{
 			&:link,&visited{ color: $gold-color; }
 			&:hover{ color: $gold-color-hover; }
