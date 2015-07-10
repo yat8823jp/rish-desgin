@@ -60,8 +60,6 @@ $(document).ready(function(){
       param[v.name] = v.value;
     });
 
-    console.log(param);
-
     $.ajax({
       type: 'POST',
       async: true,

@@ -1,0 +1,22 @@
+{
+  "name": "rish-design-dev",
+  "version": "0.0.1",
+  "homepage": "https://github.com/yat8823jp/rish-desgin",
+  "authors": [
+    "yat8823jp <yat@yat-net.com>"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "html",
+    "js",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
