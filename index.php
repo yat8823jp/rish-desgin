@@ -18,14 +18,15 @@
 	<article class="wrap">
 
 		<header class="sec1" id="sec1">
-			<h1 class="logo"><img src="img/rish-design-logo1.png" alt="Rish-Design" width="336" height="" class="logo"></h1>
+			<h1 class="logo"><img src="img/rish-design-logo1.png" alt="Rish-Design" width="" height="" class="logo"></h1>
+			<div class="top-arrow-bottom"><a href="#sec2"><img src="img/top_arrow_bottom.gif" alt="↓" width="" height=""></a></div>
 		</header><!--/.sec1-->
 
 		<section class="sec2" id="sec2">
-			<h1 class="headline"><img src="img/sec2_headline.png" alt="About" width="694" height="" class="logo"></h1>
+			<h1 class="headline"><img src="img/sec2_headline.png" alt="About" width="" height="" class="logo" data-sp-img="img/sp_about.png"></h1>
 			<div class="l-img-r-content content">
 				<div class="left">
-					<img src="img/photo.jpg" alt="" width="318" height="394" alt="photo" class="photo">
+					<img src="img/photo.jpg" alt="" width="" alt="photo" class="photo">
 					<ul class="sns-ico">
 						<li class="ico-twitter"><a href="https://twitter.com/yat8823jp"><img src="img/ico_twitter.png" width="29" height="24" alt=""></a></li>
 						<li class="ico-facebook"><a href="https://www.facebook.com/yat8823jp"><img src="img/ico_facebook.png" width="25" height="25" alt=""></a></li>
@@ -58,103 +59,93 @@
 		</section><!--/.sec2-->
 
 		<section class="sec3" id="sec3">
-			<h1 class="headline"><img src="img/sec3_headline.png" alt="About" width="752" height="" class="logo"></h1>
+			<h1 class="headline"><img src="img/sec3_headline.png" alt="Pricelist" width="752" height="" class="logo" data-sp-img="img/sp_pricelist.png"></h1>
 			<div class="content">
 				<p class="sec-copy">基本的な料金は下記となります。ご不明な点、こちらで該当しない点等、ご相談がありましたら、お気軽にお問い合わせください。</p>
 
-				<h2 class="sec3-h2">Webデザイン・ホームページ作成</h2>
+				<h2 class="sec3-h2" data-price="headline">Webデザイン・ホームページ作成</h2>
 				<table class="price-table">
 				  <tbody>
 				    <tr>
-				      <td colspan="3" class="price-headline"><h3>PC用サイト・スマートフォンサイト</h3></td>
+				      <td colspan="3" class="price-headline" data-price="title"><h3>PC用サイト・スマートフォンサイト</h3></td>
 				    </tr>
 				    <tr>
-				      <td>デザイン</td>
-				      <td>トップページ</td>
-				      <td>50,000円〜</td>
-				    </tr>
-				    <tr>
-				      <td></td>
-				      <td>下層ページ（1P）</td>
-				      <td>30,000円〜</td>
+				      <td data-price="subtitle">デザイン</td>
+				      <td data-price="item">トップページ</td>
+				      <td data-price="price">50,000円〜</td>
 				    </tr>
 				    <tr>
 				      <td></td>
-				      <td>バナー作成</td>
-				      <td>5,000円〜/td>
-				    </tr>
-				    <tr>
-				      <td>マークアップ＆コーディング</td>
-				      <td>テンプレートページ</td>
-				      <td>50,000円〜</td>
+				      <td data-price="item">下層ページ（1P）</td>
+				      <td data-price="price">30,000円〜</td>
 				    </tr>
 				    <tr>
 				      <td></td>
-				      <td>下層ページ（1P）</td>
-				      <td>30,000円〜</td>
+				      <td data-price="item">バナー作成</td>
+				      <td data-price="price">5,000円〜</td>
+				    </tr>
+				    <tr>
+				      <td data-price="subtitle">マークアップ＆コーディング</td>
+				      <td data-price="item">テンプレートページ</td>
+				      <td data-price="price">50,000円〜</td>
+				    </tr>
+				    <tr>
+				      <td></td>
+				      <td data-price="item">下層ページ（1P）</td>
+				      <td data-price="price">30,000円〜</td>
 				    </tr>
 				  </tbody>
 				</table>
 
-				<h2 class="sec3-h2">デザイン全般</h2>
+				<h2 class="sec3-h2" data-price="headline">デザイン全般</h2>
 				<table class="price-table">
 				  <tbody>
 				    <tr>
-				      <td colspan="3" class="price-headline"><h3>PC用サイト・スマートフォンサイト</h3></td>
+				      <td colspan="3" class="price-headline" data-price="title"><h3>印刷物等</h3></td>
 				    </tr>
 				    <tr>
-				      <td>ロゴデザイン</td>
+				      <td data-price="subtitle">ロゴデザイン</td>
 				      <td></td>
-				      <td>70,000円〜</td>
+				      <td data-price="price">70,000円〜</td>
 				    </tr>
 				    <tr>
-				      <td>名刺デザイン</td>
-				      <td>片面フルカラー</td>
-				      <td>20,000円〜</td>
+				      <td data-price="subtitle">名刺デザイン</td>
+				      <td data-price="item">片面フルカラー</td>
+				      <td data-price="price">20,000円〜</td>
 				    </tr>
 				    <tr>
-				      <td></td>
-				      <td>バナー作成</td>
-				      <td>5,000円〜/td>
-				    </tr>
-				    <tr>
-				      <td>マークアップ＆コーディング</td>
-				      <td>テンプレートページ</td>
-				      <td>50,000円〜</td>
-				    </tr>
-				    <tr>
-				      <td>チラシデザイン</td>
-				      <td>A4</td>
-				      <td>30,000円〜</td>
+				      <td data-price="subtitle">チラシデザイン</td>
+				      <td data-price="item">A4</td>
+				      <td data-price="price">30,000円〜</td>
 				    </tr>
 				  </tbody>
 				</table>
 
 			</div><!--/content-->
-		</section><!--/.sec2-->
+		</section><!--/.sec3-->
 
 		<section class="sec4" id="sec4">
-			<h1 class="headline"><img src="img/sec4_headline.png" alt="About" width="752" height="" class="logo"></h1>
+			<h1 class="headline"><img src="img/sec4_headline.png" alt="Portfolio" width="752" height="" class="logo" data-sp-img="img/sp_portfolio.png"></h1>
 			<div class="content">
 				<p class="sec-copy">過去の制作実績です</p>
 
 				<ul class="portfolio-main">
 
 					<li class="portfolio-main-1">
-						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="I.I.S" width="396"></p>
+						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="Rish-Design" width=""></p>
 						<dl class="comment">
-							<dt>SOHO・フリーランスエンジニア(原克志) I.I.S. 様</dt>
-							<dd>スマートフォンサイトデザイン/コーディング/JS</dd>
+							<dt>Rish-Desin 事業サイト</dt>
+							<dd>デザイン / コーディング / レスポンシブ / jQuery / PHP</dd>
 						</dl>
 					</li><!--/.portfolio-main-1-->
 
 					<li class="portfolio-main-2">
-						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="I.I.S" width="396"></p>
+						<p class="image"><a href="http://ii-s.biz/m/" target="_blank"><img src="img/portfolio/portfolio_main_2.png" alt="I.I.S" width=""></a></p>
 						<dl class="comment">
 							<dt>SOHO・フリーランスエンジニア(原克志) I.I.S. 様</dt>
-							<dd>スマートフォンサイトデザイン/コーディング/JS</dd>
+							<dd>スマートフォンサイトデザイン / コーディング / jQuery</dd>
 						</dl>
-					</li><!--/.portfolio-main-1-->
+					</li><!--/.portfolio-main-2-->
 
 				</ul><!--/.portfolio-main-->
 
@@ -162,29 +153,40 @@
 
 			<div class="slider">
 
+				<div class="slick-prev"><a href="#prev"><img src="img/slick_prev.png" alt="&lt;"></a></div>
+				<div class="slick-next"><a href="#next"><img src="img/slick_next.png" alt="&gt;"></a></div>
+
 				<ul class="portfolio-sub">
 
 					<li class="portfolio-sub-item">
-						<p class="image"><img src="img/portfolio/portfolio_sub_1.png" alt="I.I.S" width="222"></p>
+						<p class="image"><a href="http://juku-ies.com/" target="_blank"><img src="img/portfolio/portfolio_sub_1.png" alt="ies進学塾" width="222"></a></p>
 						<dl class="comment">
-							<dt>SOHO・フリーランスエンジニア(原克志) I.I.S. 様</dt>
-							<dd>スマートフォンサイトデザイン/コーディング/JS</dd>
+							<dt>進学塾ies 様</dt>
+							<dd>コーディング / JavaScript / YouTubeApi</dd>
 						</dl>
 					</li><!--/.portfolio-sub-item-->
 
 					<li class="portfolio-sub-item">
-						<p class="image"><img src="img/portfolio/portfolio_sub_1.png" alt="I.I.S" width="222"></p>
+						<p class="image"><a href="http://www.travelhills.jp/" target="_blank"><img src="img/portfolio/portfolio_sub_2.png" alt="トラベルヒルズ" width="222"></a></p>
 						<dl class="comment">
-							<dt>SOHO・フリーランスエンジニア(原克志) I.I.S. 様</dt>
-							<dd>スマートフォンサイトデザイン/コーディング/JS</dd>
+							<dt>トラベルヒルズ 様</dt>
+							<dd>デザイン / コーディング / jQuery</dd>
 						</dl>
 					</li><!--/.portfolio-sub-item-->
 
 					<li class="portfolio-sub-item">
-						<p class="image"><img src="img/portfolio/portfolio_sub_1.png" alt="I.I.S" width="222"></p>
+						<p class="image"><img src="img/portfolio/portfolio_sub_noimage.png" alt="" width="222"></p>
 						<dl class="comment">
-							<dt>SOHO・フリーランスエンジニア(原克志) I.I.S. 様</dt>
-							<dd>スマートフォンサイトデザイン/コーディング/JS</dd>
+							<dt>某大学 様</dt>
+							<dd>コーディング /JS</dd>
+						</dl>
+					</li><!--/.portfolio-sub-item-->
+
+					<li class="portfolio-sub-item">
+						<p class="image"><img src="img/portfolio/portfolio_sub_noimage.png" alt="" width="222"></p>
+						<dl class="comment">
+							<dt>カフェオーナー様向け CMSカスタマイズ</dt>
+							<dd>WordPress</dd>
 						</dl>
 					</li><!--/.portfolio-sub-item-->
 
@@ -195,7 +197,7 @@
 		</section><!--/.sec2-->
 
 		<section class="sec5" id="sec5">
-			<h1 class="headline"><img src="img/sec5_headline.png" alt="About" width="711" height="" class="logo"></h1>
+			<h1 class="headline"><img src="img/sec5_headline.png" alt="contact" width="711" height="" class="logo" data-sp-img="img/sp_contact.png"></h1>
 
 			<div class="check-form-slide">
 
@@ -279,17 +281,17 @@
 			</dl>
 
 
-		</section><!--/.sec2-->
+		</section><!--/.sec5-->
 
 		<footer>
 			<ul class="ft-menu">
-				<li>|　<a href="#pagetop">TOP</a></li>
-				<li>　|　<a href="#sec2">About</a></li>
-				<li>　|　<a href="#sec3">Price List</a></li>
-				<li>　|　<a href="#sec4">Portfoliio</a></li>
-				<li>　|　<a href="#sec5">Contact</a>　|</li>
+				<li><a href="#pagetop">TOP</a></li>
+				<li><a href="#sec2">About</a></li>
+				<li><a href="#sec3">Price List</a></li>
+				<li><a href="#sec4">Portfoliio</a></li>
+				<li><a href="#sec5">Contact</a></li>
 			</ul>
-			<h1 class="logo"><img src="img/rish-design-logo2.png" alt="Rish-Design" width="276" height="" class="logo"></h1>
+			<h1 class="logo"><img src="img/rish-design-logo2.png" alt="Rish-Design" width="" height="" class="logo"></h1>
 			<address class="copyright">
 				copyright &copy; 2015 Rish-design
 			</address>
@@ -303,6 +305,9 @@
 	<script src="js/slick-1.5.0/slick.js"></script>
 	<script src="js/contact.js"></script>
 	<script src="js/scroll.js"></script>
+	<script src="js/jquery.smoothScroll.js"></script>
+	<script src="js/slide.js"></script>
+	<script src="js/responsive.js"></script>
 	<!--<script src="js/sm-menu.js"></script>-->
 
 </body>
