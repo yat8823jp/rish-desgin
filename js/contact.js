@@ -26,6 +26,8 @@ $(document).ready(function(){
     infinite: false, //無限スクロール
     draggable: false, //マウスドラッグでのスクロール
     arrows: false,
+    swipe: false,
+    touchMove: false,
     prevArrow: $( '.contact-form .reset-bt' ),
     nextArrow: $( '.contact-form .check-bt' )
   });

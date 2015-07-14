@@ -99,15 +99,36 @@ body {
   height: 100%;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 133, ../dev/scss/main.scss */
+  body {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 133, ../dev/scss/main.scss */
+  body {
+    width: 100%;
+  }
+}
 
-/* line 139, ../dev/scss/main.scss */
+/* line 147, ../dev/scss/main.scss */
 article.wrap {
   height: 100%;
   min-height: 100%;
   position: relative;
 }
 
-/* line 150, ../dev/scss/main.scss */
+/* line 155, ../dev/scss/main.scss */
+a:link, a:visited {
+  color: #fffac6;
+}
+/* line 156, ../dev/scss/main.scss */
+a:hover {
+  color: #fff;
+}
+
+/* line 163, ../dev/scss/main.scss */
 .sec2,
 .sec3,
 .sec4,
@@ -120,31 +141,56 @@ article.wrap {
   font-family: mplus-1p-regular;
   font-size: 1.6rem;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 150, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 163, ../dev/scss/main.scss */
   .sec2,
   .sec3,
   .sec4,
   .sec5 {
-    text-align: center;
+    width: 100%;
   }
 }
-/* line 168, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 163, ../dev/scss/main.scss */
+  .sec2,
+  .sec3,
+  .sec4,
+  .sec5 {
+    width: 100%;
+  }
+}
+/* line 185, ../dev/scss/main.scss */
 .sec2 .headline img.logo,
 .sec3 .headline img.logo,
 .sec4 .headline img.logo,
 .sec5 .headline img.logo {
   width: 694px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 167, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 184, ../dev/scss/main.scss */
   .sec2 .headline,
   .sec3 .headline,
   .sec4 .headline,
   .sec5 .headline {
     margin: auto;
   }
-  /* line 174, ../dev/scss/main.scss */
+  /* line 191, ../dev/scss/main.scss */
+  .sec2 .headline img,
+  .sec3 .headline img,
+  .sec4 .headline img,
+  .sec5 .headline img {
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 184, ../dev/scss/main.scss */
+  .sec2 .headline,
+  .sec3 .headline,
+  .sec4 .headline,
+  .sec5 .headline {
+    margin: auto;
+  }
+  /* line 198, ../dev/scss/main.scss */
   .sec2 .headline img,
   .sec3 .headline img,
   .sec4 .headline img,
@@ -153,27 +199,27 @@ article.wrap {
   }
 }
 
-/* line 183, ../dev/scss/main.scss */
+/* line 207, ../dev/scss/main.scss */
 h1.headline {
   padding-top: 80px;
   text-align: center;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 183, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 207, ../dev/scss/main.scss */
   h1.headline {
     padding-top: 50px;
   }
 }
 
-/* line 191, ../dev/scss/main.scss */
+/* line 215, ../dev/scss/main.scss */
 .content,
 .content2,
 .content3 {
   width: 860px;
   margin: 60px auto 0 auto;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 191, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 215, ../dev/scss/main.scss */
   .content,
   .content2,
   .content3 {
@@ -182,7 +228,17 @@ h1.headline {
     box-sizing: border-box;
   }
 }
-/* line 202, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 215, ../dev/scss/main.scss */
+  .content,
+  .content2,
+  .content3 {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    box-sizing: border-box;
+  }
+}
+/* line 231, ../dev/scss/main.scss */
 .content .sec-text,
 .content .sec-copy,
 .content2 .sec-text,
@@ -192,14 +248,24 @@ h1.headline {
   font-size: 1.6rem;
   line-height: 1.8;
 }
-/* line 208, ../dev/scss/main.scss */
+/* line 237, ../dev/scss/main.scss */
 .content .sec-copy,
 .content2 .sec-copy,
 .content3 .sec-copy {
   text-align: center;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 208, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 237, ../dev/scss/main.scss */
+  .content .sec-copy,
+  .content2 .sec-copy,
+  .content3 .sec-copy {
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 237, ../dev/scss/main.scss */
   .content .sec-copy,
   .content2 .sec-copy,
   .content3 .sec-copy {
@@ -209,19 +275,25 @@ h1.headline {
   }
 }
 
-/* line 218, ../dev/scss/main.scss */
+/* line 252, ../dev/scss/main.scss */
 .slider {
   width: 960px;
   text-align: center;
   margin: auto;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 218, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 252, ../dev/scss/main.scss */
   .slider {
     width: 100%;
   }
 }
-/* line 226, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 252, ../dev/scss/main.scss */
+  .slider {
+    width: 100%;
+  }
+}
+/* line 263, ../dev/scss/main.scss */
 .slider .slick-prev,
 .slider .slick-next {
   width: 50px;
@@ -230,8 +302,8 @@ h1.headline {
   position: relative;
   z-index: 100;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 226, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 263, ../dev/scss/main.scss */
   .slider .slick-prev,
   .slider .slick-next {
     margin: 0 20px;
@@ -243,22 +315,41 @@ h1.headline {
     cursor: pointer;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
   }
-  /* line 242, ../dev/scss/main.scss */
+  /* line 279, ../dev/scss/main.scss */
   .slider .slick-prev img,
   .slider .slick-next img {
     width: 14px;
   }
 }
-/* line 248, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 263, ../dev/scss/main.scss */
+  .slider .slick-prev,
+  .slider .slick-next {
+    margin: 0 20px;
+    padding-top: 12.5px;
+    box-sizing: border-box;
+    opacity: 0.8;
+    background: #fff;
+    border-radius: 100%;
+    cursor: pointer;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+  }
+  /* line 292, ../dev/scss/main.scss */
+  .slider .slick-prev img,
+  .slider .slick-next img {
+    width: 14px;
+  }
+}
+/* line 298, ../dev/scss/main.scss */
 .slider .slick-prev {
   float: left;
 }
-/* line 252, ../dev/scss/main.scss */
+/* line 302, ../dev/scss/main.scss */
 .slider .slick-next {
   float: right;
 }
 
-/* line 261, ../dev/scss/main.scss */
+/* line 311, ../dev/scss/main.scss */
 .sec1 {
   width: 100%;
   height: 100%;
@@ -268,44 +359,60 @@ h1.headline {
   position: relative;
   display: block;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 261, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 311, ../dev/scss/main.scss */
   .sec1 {
     height: auto;
     min-height: 100%;
   }
 }
-/* line 276, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 311, ../dev/scss/main.scss */
+  .sec1 {
+    height: auto;
+    min-height: 100%;
+  }
+}
+/* line 331, ../dev/scss/main.scss */
 .sec1 h1.logo {
   top: 50%;
   left: 50%;
   margin: -96px auto auto -168px;
   position: absolute;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 276, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 331, ../dev/scss/main.scss */
   .sec1 h1.logo {
     margin: -49.5px auto auto -84px;
   }
-  /* line 283, ../dev/scss/main.scss */
+  /* line 338, ../dev/scss/main.scss */
   .sec1 h1.logo img {
     width: 168px;
   }
 }
-/* line 288, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 331, ../dev/scss/main.scss */
+  .sec1 h1.logo {
+    margin: -49.5px auto auto -84px;
+  }
+  /* line 343, ../dev/scss/main.scss */
+  .sec1 h1.logo img {
+    width: 168px;
+  }
+}
+/* line 348, ../dev/scss/main.scss */
 .sec1 div.top-arrow-bottom {
-  width: 100%;
   position: absolute;
   top: 92%;
   left: 50%;
   margin: auto auto auto -14px;
 }
-/* line 294, ../dev/scss/main.scss */
+/* line 354, ../dev/scss/main.scss */
 .sec1 div.top-arrow-bottom img {
   width: 28px;
 }
 
-/* line 305, ../dev/scss/main.scss */
+/* line 365, ../dev/scss/main.scss */
 .sec2 {
   background: url(../img/sec2_bg.png);
   background-size: cover;
@@ -313,150 +420,223 @@ h1.headline {
   font-size: 2.0rem;
   color: #fff;
 }
-/* line 313, ../dev/scss/main.scss */
+/* line 373, ../dev/scss/main.scss */
 .sec2 .headline img.logo {
   width: 694px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 313, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 373, ../dev/scss/main.scss */
   .sec2 .headline img.logo {
     width: 347px;
   }
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 322, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 373, ../dev/scss/main.scss */
+  .sec2 .headline img.logo {
+    width: 347px;
+  }
+}
+/* line 385, ../dev/scss/main.scss */
+.sec2 .l-img-r-content {
+  text-align: center;
+}
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 385, ../dev/scss/main.scss */
   .sec2 .l-img-r-content {
     width: 100%;
     padding: 10px;
     float: none;
   }
 }
-/* line 330, ../dev/scss/main.scss */
-.sec2 .l-img-r-content .left {
-  float: left;
-  margin-right: 30px;
-}
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 330, ../dev/scss/main.scss */
-  .sec2 .l-img-r-content .left {
-    margin-right: 0;
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 385, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content {
+    width: 100%;
+    padding: 10px;
     float: none;
   }
 }
-/* line 339, ../dev/scss/main.scss */
+/* line 401, ../dev/scss/main.scss */
+.sec2 .l-img-r-content .left {
+  text-align: left;
+  float: left;
+  margin-right: 30px;
+}
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 401, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .left {
+    margin-right: 0;
+    text-align: center;
+    float: none;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 401, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .left {
+    margin-right: 0;
+    text-align: center;
+    float: none;
+  }
+}
+/* line 418, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .left img.photo {
   /* display: none; */
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 339, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 418, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .left img.photo {
     width: 159px;
   }
 }
-/* line 346, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 418, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .left img.photo {
+    width: 159px;
+  }
+}
+/* line 428, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico {
   margin-top: 10px;
   vertical-align: middle;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 346, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 428, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .left ul.sns-ico {
     margin: 20px auto auto auto;
   }
 }
-/* line 352, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 428, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .left ul.sns-ico {
+    margin: 20px auto auto auto;
+  }
+}
+/* line 437, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico li {
   margin-right: 10px;
   display: inline;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 352, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 437, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .left ul.sns-ico li {
     margin: auto 10px;
   }
 }
-/* line 358, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 437, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .left ul.sns-ico li {
+    margin: auto 10px;
+  }
+}
+/* line 446, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico li.ico-twitter a {
   width: 29px;
   height: 24px;
 }
-/* line 359, ../dev/scss/main.scss */
+/* line 447, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .left ul.sns-ico li.ico-facebook a {
   width: 25px;
   height: 25px;
 }
-/* line 364, ../dev/scss/main.scss */
+/* line 452, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right {
+  text-align: left;
   overflow: hidden;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 364, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 452, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .right {
     margin: 10px;
     text-align: left;
     clear: both;
   }
 }
-/* line 372, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 452, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .right {
+    margin: 10px;
+    text-align: left;
+    clear: both;
+  }
+}
+/* line 466, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right h2, .sec2 .l-img-r-content .right dt {
   font-weight: bold;
 }
-/* line 373, ../dev/scss/main.scss */
+/* line 467, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right h2 {
   margin-top: 30px;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-/* line 374, ../dev/scss/main.scss */
+/* line 468, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right dl {
   margin-top: 20px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 374, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 468, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .right dl {
     width: 100%;
   }
 }
-/* line 381, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 468, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .right dl {
+    width: 100%;
+  }
+}
+/* line 479, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right dl dt {
   margin: 10px 0;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 381, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 479, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .right dl dt {
     margin: 10px 10px 0 0;
   }
 }
-/* line 387, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 479, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .right dl dt {
+    margin: 10px 10px 0 0;
+  }
+}
+/* line 488, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right dl dd {
   display: inline;
   font-size: 1.6rem;
   line-height: 1.6;
 }
-/* line 393, ../dev/scss/main.scss */
+/* line 497, ../dev/scss/main.scss */
 .sec2 .l-img-r-content .right dl dt + dd {
   margin-left: 15px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 393, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 497, ../dev/scss/main.scss */
   .sec2 .l-img-r-content .right dl dt + dd {
     margin-left: 0;
   }
 }
-/* line 401, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 497, ../dev/scss/main.scss */
+  .sec2 .l-img-r-content .right dl dt + dd {
+    margin-left: 0;
+  }
+}
+/* line 508, ../dev/scss/main.scss */
 .sec2 .l-img-r-content:after {
   content: "";
   display: block;
   clear: both;
 }
 
-/* line 409, ../dev/scss/main.scss */
+/* line 516, ../dev/scss/main.scss */
 .sec3 {
   background: url(../img/sec3_bg.png);
 }
-/* line 412, ../dev/scss/main.scss */
+/* line 519, ../dev/scss/main.scss */
 .sec3 h2.sec3-h2 {
   margin-top: 60px;
   padding: 24px 0 24px 24px;
@@ -467,8 +647,8 @@ h1.headline {
   border-top: 2px solid #720000;
   border-bottom: 2px solid #720000;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 412, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 519, ../dev/scss/main.scss */
   .sec3 h2.sec3-h2 {
     margin: 30px 10px auto 10px;
     padding: 12px;
@@ -477,13 +657,23 @@ h1.headline {
     text-align: left;
   }
 }
-/* line 430, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 519, ../dev/scss/main.scss */
+  .sec3 h2.sec3-h2 {
+    margin: 30px 10px auto 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+/* line 544, ../dev/scss/main.scss */
 .sec3 table.price-table {
   width: 690px;
   margin: 20px auto auto auto;
   position: relative;
 }
-/* line 435, ../dev/scss/main.scss */
+/* line 549, ../dev/scss/main.scss */
 .sec3 table.price-table tr td.price-headline {
   font-size: 1.8rem;
   line-height: 1.8;
@@ -491,48 +681,48 @@ h1.headline {
   border: none;
   border-bottom: 2px solid #720000;
 }
-/* line 442, ../dev/scss/main.scss */
+/* line 556, ../dev/scss/main.scss */
 .sec3 table.price-table tr td {
   font-size: 1.6rem;
   line-height: 1.6;
   padding: 20px;
   border: 1px dotted #720000;
 }
-/* line 447, ../dev/scss/main.scss */
+/* line 561, ../dev/scss/main.scss */
 .sec3 table.price-table tr td:first-child {
   border-left: none;
 }
-/* line 448, ../dev/scss/main.scss */
+/* line 562, ../dev/scss/main.scss */
 .sec3 table.price-table tr td:last-child {
   border-right: none;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 430, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 544, ../dev/scss/main.scss */
   .sec3 table.price-table {
     width: 100%;
     padding: 0 10px;
     box-sizing: border-box;
     display: block;
   }
-  /* line 458, ../dev/scss/main.scss */
+  /* line 572, ../dev/scss/main.scss */
   .sec3 table.price-table tbody {
     width: 100%;
     display: block;
     border-bottom: 1px solid #720000;
   }
-  /* line 463, ../dev/scss/main.scss */
+  /* line 577, ../dev/scss/main.scss */
   .sec3 table.price-table tbody tr {
     width: 100%;
     display: block;
   }
-  /* line 466, ../dev/scss/main.scss */
+  /* line 580, ../dev/scss/main.scss */
   .sec3 table.price-table tbody tr td {
     width: 100%;
     box-sizing: border-box;
     display: none;
     border: none;
   }
-  /* line 472, ../dev/scss/main.scss */
+  /* line 586, ../dev/scss/main.scss */
   .sec3 table.price-table tbody tr td[data-price="title"] {
     height: auto;
     padding: 10px;
@@ -542,7 +732,7 @@ h1.headline {
     border: 1px solid #fff;
     border-bottom: 1px solid #fff;
   }
-  /* line 481, ../dev/scss/main.scss */
+  /* line 595, ../dev/scss/main.scss */
   .sec3 table.price-table tbody tr td[data-price="subtitle"] {
     height: auto;
     padding: 10px;
@@ -554,7 +744,7 @@ h1.headline {
     border-bottom: 1px dotted #fff;
     display: block;
   }
-  /* line 492, ../dev/scss/main.scss */
+  /* line 606, ../dev/scss/main.scss */
   .sec3 table.price-table tbody tr td[data-price="item"] {
     height: auto;
     padding: 10px;
@@ -566,7 +756,79 @@ h1.headline {
     border-bottom: none;
     display: block;
   }
-  /* line 503, ../dev/scss/main.scss */
+  /* line 617, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody tr td[data-price="price"] {
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    background: url(../img/sp_price_price_bg.jpg);
+    border-top: 1px dotted #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    display: block;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 544, ../dev/scss/main.scss */
+  .sec3 table.price-table {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    display: block;
+  }
+  /* line 637, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody {
+    width: 100%;
+    display: block;
+    border-bottom: 1px solid #720000;
+  }
+  /* line 642, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody tr {
+    width: 100%;
+    display: block;
+  }
+  /* line 645, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody tr td {
+    width: 100%;
+    box-sizing: border-box;
+    display: none;
+    border: none;
+  }
+  /* line 651, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody tr td[data-price="title"] {
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    background: url(../img/sp_price_headline_bg.jpg);
+    display: block;
+    border: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+  }
+  /* line 660, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody tr td[data-price="subtitle"] {
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    background: url(../img/sp_prive_subtitle_bg.jpg);
+    border-top: 2px solid #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px dotted #fff;
+    display: block;
+  }
+  /* line 671, ../dev/scss/main.scss */
+  .sec3 table.price-table tbody tr td[data-price="item"] {
+    height: auto;
+    padding: 10px;
+    color: #fff;
+    background: url(../img/sp_price_item_bg.jpg);
+    border-top: 1px dotted #fff;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: none;
+    display: block;
+  }
+  /* line 682, ../dev/scss/main.scss */
   .sec3 table.price-table tbody tr td[data-price="price"] {
     height: auto;
     padding: 10px;
@@ -579,74 +841,109 @@ h1.headline {
   }
 }
 
-/* line 537, ../dev/scss/main.scss */
+/* line 742, ../dev/scss/main.scss */
 .sec4 {
   width: 100%;
   background: url(../img/sec4_bg.png);
   font-size: 1.6rem;
 }
-/* line 542, ../dev/scss/main.scss */
+/* line 747, ../dev/scss/main.scss */
 .sec4 .portfolio-main {
   width: 100%;
   margin-top: 60px;
 }
-/* line 545, ../dev/scss/main.scss */
+/* line 750, ../dev/scss/main.scss */
 .sec4 .portfolio-main:after {
   content: "";
   clear: both;
   display: block;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 542, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 747, ../dev/scss/main.scss */
   .sec4 .portfolio-main {
     width: 100%;
     margin-top: 30px;
   }
 }
-/* line 551, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 747, ../dev/scss/main.scss */
+  .sec4 .portfolio-main {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+/* line 760, ../dev/scss/main.scss */
 .sec4 .portfolio-main .portfolio-main-1 {
   float: left;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 551, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 760, ../dev/scss/main.scss */
   .sec4 .portfolio-main .portfolio-main-1 {
     float: none;
   }
 }
-/* line 557, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 760, ../dev/scss/main.scss */
+  .sec4 .portfolio-main .portfolio-main-1 {
+    float: none;
+  }
+}
+/* line 769, ../dev/scss/main.scss */
 .sec4 .portfolio-main .portfolio-main-2 {
   margin-top: 120px;
   float: right;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 557, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 769, ../dev/scss/main.scss */
   .sec4 .portfolio-main .portfolio-main-2 {
     margin-top: 40px;
     float: none;
   }
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 566, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 769, ../dev/scss/main.scss */
+  .sec4 .portfolio-main .portfolio-main-2 {
+    margin-top: 40px;
+    float: none;
+  }
+}
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 782, ../dev/scss/main.scss */
   .sec4 .portfolio-main .portfolio-main-1,
   .sec4 .portfolio-main .portfolio-main-2 {
     width: 100%;
     text-align: center;
   }
 }
-/* line 573, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 782, ../dev/scss/main.scss */
+  .sec4 .portfolio-main .portfolio-main-1,
+  .sec4 .portfolio-main .portfolio-main-2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+/* line 793, ../dev/scss/main.scss */
 .sec4 .portfolio-main .portfolio-main-1 img,
 .sec4 .portfolio-main .portfolio-main-2 img {
   width: 396px;
   margin: auto;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 573, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 793, ../dev/scss/main.scss */
   .sec4 .portfolio-main .portfolio-main-1 img,
   .sec4 .portfolio-main .portfolio-main-2 img {
     width: 198px;
   }
 }
-/* line 582, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 793, ../dev/scss/main.scss */
+  .sec4 .portfolio-main .portfolio-main-1 img,
+  .sec4 .portfolio-main .portfolio-main-2 img {
+    width: 198px;
+  }
+}
+/* line 805, ../dev/scss/main.scss */
 .sec4 .portfolio-main dl.comment {
   width: 274px;
   height: auto;
@@ -655,11 +952,11 @@ h1.headline {
   text-align: center;
   box-sizing: border-box;
 }
-/* line 584, ../dev/scss/main.scss */
+/* line 807, ../dev/scss/main.scss */
 .sec4 .portfolio-main dl.comment dt {
   background: url(../img/portfolio/portfolio-main-comment-bg.png) repeat-y;
 }
-/* line 533, ../dev/scss/main.scss */
+/* line 712, ../dev/scss/main.scss */
 .sec4 .portfolio-main dl.comment dt {
   margin: auto auto 20px auto;
   padding: 20px;
@@ -670,7 +967,7 @@ h1.headline {
   border-bottom: 1px solid #5d4710;
   box-sizing: border-box;
 }
-/* line 534, ../dev/scss/main.scss */
+/* line 713, ../dev/scss/main.scss */
 .sec4 .portfolio-main dl.comment dd {
   padding: 20px;
   background: #fff;
@@ -681,47 +978,67 @@ h1.headline {
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
-/* line 596, ../dev/scss/main.scss */
+/* line 816, ../dev/scss/main.scss */
 .sec4 .portfolio-sub {
   width: 860px;
   margin: 60px;
   display: inline-block;
 }
-/* line 600, ../dev/scss/main.scss */
+/* line 820, ../dev/scss/main.scss */
 .sec4 .portfolio-sub:after {
   content: "";
   clear: both;
   display: block;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 596, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 816, ../dev/scss/main.scss */
   .sec4 .portfolio-sub {
     width: 100%;
     margin: 0;
   }
 }
-/* line 606, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 816, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub {
+    width: 100%;
+    margin: 0;
+  }
+}
+/* line 830, ../dev/scss/main.scss */
 .sec4 .portfolio-sub .portfolio-sub-item {
-  width: 222px;
+  width: 200px;
   text-align: center;
 }
-/* line 609, ../dev/scss/main.scss */
+/* line 833, ../dev/scss/main.scss */
 .sec4 .portfolio-sub .portfolio-sub-item img {
   margin: auto;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 606, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 830, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub .portfolio-sub-item {
+    width: 160px;
+    margin-top: 30px;
+    text-align: center;
+  }
+  /* line 840, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub .portfolio-sub-item img {
+    width: 160px;
+    margin: auto;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 830, ../dev/scss/main.scss */
   .sec4 .portfolio-sub .portfolio-sub-item {
     margin-top: 30px;
     text-align: center;
   }
-  /* line 615, ../dev/scss/main.scss */
+  /* line 848, ../dev/scss/main.scss */
   .sec4 .portfolio-sub .portfolio-sub-item img {
     width: 200px;
     margin: auto;
   }
 }
-/* line 622, ../dev/scss/main.scss */
+/* line 855, ../dev/scss/main.scss */
 .sec4 .portfolio-sub dl.comment {
   width: 274px;
   height: auto;
@@ -730,12 +1047,12 @@ h1.headline {
   text-align: center;
   box-sizing: border-box;
 }
-/* line 623, ../dev/scss/main.scss */
+/* line 856, ../dev/scss/main.scss */
 .sec4 .portfolio-sub dl.comment dt {
   width: 195px;
   background: url(../img/portfolio/portfolio-sub-comment-bg.png) repeat-y;
 }
-/* line 533, ../dev/scss/main.scss */
+/* line 712, ../dev/scss/main.scss */
 .sec4 .portfolio-sub dl.comment dt {
   margin: auto auto 20px auto;
   padding: 20px;
@@ -746,7 +1063,7 @@ h1.headline {
   border-bottom: 1px solid #5d4710;
   box-sizing: border-box;
 }
-/* line 534, ../dev/scss/main.scss */
+/* line 713, ../dev/scss/main.scss */
 .sec4 .portfolio-sub dl.comment dd {
   padding: 20px;
   background: #fff;
@@ -757,15 +1074,83 @@ h1.headline {
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 855, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub dl.comment {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto auto auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  /* line 724, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub dl.comment dt {
+    width: 160px;
+    margin: auto auto 20px auto;
+    padding: 20px;
+    font-size: 1.6rem;
+    color: #93721c;
+    text-shadow: -1px -1px 0 #000;
+    line-height: 1.4;
+    border-bottom: 1px solid #5d4710;
+    box-sizing: border-box;
+  }
+  /* line 725, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub dl.comment dd {
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 855, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub dl.comment {
+    width: 200px;
+    height: auto;
+    padding: 20px;
+    margin: 20px auto auto auto;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  /* line 736, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub dl.comment dt {
+    width: 160px;
+    margin: auto auto 20px auto;
+    padding: 20px;
+    font-size: 1.6rem;
+    color: #93721c;
+    text-shadow: -1px -1px 0 #000;
+    line-height: 1.4;
+    border-bottom: 1px solid #5d4710;
+    box-sizing: border-box;
+  }
+  /* line 737, ../dev/scss/main.scss */
+  .sec4 .portfolio-sub dl.comment dd {
+    padding: 20px;
+    background: #fff;
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+}
 
-/* line 636, ../dev/scss/main.scss */
+/* line 871, ../dev/scss/main.scss */
 .sec5 {
   background: url(../img/sec5_bg.jpg);
   color: #fffac6;
   font-size: 1.6rem;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 636, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 871, ../dev/scss/main.scss */
   .sec5 {
     width: 100%;
     padding-left: 10px;
@@ -773,15 +1158,24 @@ h1.headline {
     box-sizing: border-box;
   }
 }
-/* line 646, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 871, ../dev/scss/main.scss */
+  .sec5 {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+}
+/* line 887, ../dev/scss/main.scss */
 .sec5 .attention {
   font-size: 1.2rem;
 }
-/* line 660, ../dev/scss/main.scss */
+/* line 901, ../dev/scss/main.scss */
 .sec5 dl.form-block {
   display: inline-block;
 }
-/* line 663, ../dev/scss/main.scss */
+/* line 904, ../dev/scss/main.scss */
 .sec5 dl.form-block dt {
   width: 180px;
   text-align: right;
@@ -789,15 +1183,15 @@ h1.headline {
   float: left;
   clear: left;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 663, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 904, ../dev/scss/main.scss */
   .sec5 dl.form-block dt {
     width: 100%;
     margin-bottom: 10px;
     text-align: center;
   }
 }
-/* line 676, ../dev/scss/main.scss */
+/* line 917, ../dev/scss/main.scss */
 .sec5 dl.form-block dd {
   width: 380px;
   margin: 0 0 30px 0;
@@ -805,33 +1199,33 @@ h1.headline {
   word-break: break-all;
   float: left;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 676, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 917, ../dev/scss/main.scss */
   .sec5 dl.form-block dd {
     width: 100%;
   }
 }
-/* line 686, ../dev/scss/main.scss */
+/* line 927, ../dev/scss/main.scss */
 .sec5 dl.form-block dd input,
 .sec5 dl.form-block dd select,
 .sec5 dl.form-block dd textarea {
   width: 380px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 686, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 927, ../dev/scss/main.scss */
   .sec5 dl.form-block dd input,
   .sec5 dl.form-block dd select,
   .sec5 dl.form-block dd textarea {
     width: 100%;
   }
 }
-/* line 698, ../dev/scss/main.scss */
+/* line 939, ../dev/scss/main.scss */
 .sec5 form.contact-form {
   margin: 60px auto auto auto;
   text-align: center;
   display: block;
 }
-/* line 705, ../dev/scss/main.scss */
+/* line 946, ../dev/scss/main.scss */
 .sec5 .check-bt,
 .sec5 .submit-bt,
 .sec5 .reset-bt {
@@ -846,48 +1240,56 @@ h1.headline {
   font-size: 0;
   display: block;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 705, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 946, ../dev/scss/main.scss */
   .sec5 .check-bt,
   .sec5 .submit-bt,
   .sec5 .reset-bt {
     margin-top: 20px;
   }
 }
-/* line 724, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 946, ../dev/scss/main.scss */
+  .sec5 .check-bt,
+  .sec5 .submit-bt,
+  .sec5 .reset-bt {
+    margin-top: 20px;
+  }
+}
+/* line 968, ../dev/scss/main.scss */
 .sec5 .set-bt:after {
   content: "";
   clear: both;
   display: block;
 }
-/* line 727, ../dev/scss/main.scss */
+/* line 971, ../dev/scss/main.scss */
 .sec5 .check-bt {
   background: url(../img/check_bt.png) no-repeat;
 }
-/* line 729, ../dev/scss/main.scss */
+/* line 973, ../dev/scss/main.scss */
 .sec5 .check-bt:hover {
   background: url(../img/check_bt_over.png) no-repeat;
 }
-/* line 734, ../dev/scss/main.scss */
+/* line 978, ../dev/scss/main.scss */
 .sec5 .submit-bt {
   background: url(../img/submit_bt.png) no-repeat;
   display: inline;
 }
-/* line 737, ../dev/scss/main.scss */
+/* line 981, ../dev/scss/main.scss */
 .sec5 .submit-bt:hover {
   background: url(../img/submit_bt_over.png) no-repeat;
 }
-/* line 742, ../dev/scss/main.scss */
+/* line 986, ../dev/scss/main.scss */
 .sec5 .reset-bt {
   background: url(../img/reset_bt.png) no-repeat;
   display: inline;
 }
-/* line 745, ../dev/scss/main.scss */
+/* line 989, ../dev/scss/main.scss */
 .sec5 .reset-bt:hover {
   background: url(../img/reset_bt_over.png) no-repeat;
 }
-/* line 750, ../dev/scss/main.scss */
-.sec5 .privacy {
+/* line 994, ../dev/scss/main.scss */
+.sec5 .privacy-box {
   width: 860px;
   margin: 80px auto auto auto;
   padding: 25px;
@@ -896,9 +1298,9 @@ h1.headline {
   color: #fff;
   font-family: 'mplus-2c-thin', sans-serif;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 750, ../dev/scss/main.scss */
-  .sec5 .privacy {
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 994, ../dev/scss/main.scss */
+  .sec5 .privacy-box {
     width: 100%;
     margin-top: 40px;
     padding: 10px;
@@ -906,43 +1308,84 @@ h1.headline {
     text-align: left;
   }
 }
-/* line 766, ../dev/scss/main.scss */
-.sec5 .privacy dt {
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 994, ../dev/scss/main.scss */
+  .sec5 .privacy-box {
+    width: 100%;
+    margin-top: 40px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: left;
+  }
+}
+/* line 1017, ../dev/scss/main.scss */
+.sec5 .privacy-box .toggle-bt {
+  margin: 40px auto 0 auto;
+  text-align: center;
+}
+/* line 1022, ../dev/scss/main.scss */
+.sec5 .privacy-box .toggle-bt.active img {
+  display: none;
+}
+/* line 1026, ../dev/scss/main.scss */
+.sec5 .privacy-box .toggle-bt.active a {
+  width: 165px;
+  height: 46px;
+  margin: auto;
+  background: url(../img/tg_close_bt.jpg) no-repeat;
+  display: block;
+}
+/* line 1034, ../dev/scss/main.scss */
+.sec5 .privacy-box .privacy-hidden {
+  display: none;
+}
+/* line 1038, ../dev/scss/main.scss */
+.sec5 .privacy-box .privacy-hidden.active {
+  display: block;
+}
+/* line 1042, ../dev/scss/main.scss */
+.sec5 .privacy-box dt {
   line-height: 1.6;
   margin-bottom: 18px;
   font-weight: bold;
 }
-/* line 769, ../dev/scss/main.scss */
-.sec5 .privacy dt h2 {
+/* line 1045, ../dev/scss/main.scss */
+.sec5 .privacy-box dt h2 {
   font-size: 2.0rem;
 }
-/* line 770, ../dev/scss/main.scss */
-.sec5 .privacy dt h3 {
+/* line 1046, ../dev/scss/main.scss */
+.sec5 .privacy-box dt h3 {
   margin-top: 18px;
   font-size: 1.8rem;
 }
-/* line 772, ../dev/scss/main.scss */
-.sec5 .privacy dd {
+/* line 1048, ../dev/scss/main.scss */
+.sec5 .privacy-box dd {
   font-size: 1.4rem;
   line-height: 1.6;
 }
-/* line 774, ../dev/scss/main.scss */
-.sec5 .privacy dd ul {
+/* line 1050, ../dev/scss/main.scss */
+.sec5 .privacy-box dd ul {
   margin: 10px 0 0 40px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 774, ../dev/scss/main.scss */
-  .sec5 .privacy dd ul {
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 1050, ../dev/scss/main.scss */
+  .sec5 .privacy-box dd ul {
     margin-left: 30px;
   }
 }
-/* line 780, ../dev/scss/main.scss */
-.sec5 .privacy dd ul li {
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 1050, ../dev/scss/main.scss */
+  .sec5 .privacy-box dd ul {
+    margin-left: 30px;
+  }
+}
+/* line 1059, ../dev/scss/main.scss */
+.sec5 .privacy-box dd ul li {
   margin-bottom: 5px;
   list-style-type: disc;
 }
 
-/* line 792, ../dev/scss/main.scss */
+/* line 1071, ../dev/scss/main.scss */
 footer {
   width: 100%;
   height: 260px;
@@ -952,7 +1395,7 @@ footer {
   bottom: 0;
   position: relative;
 }
-/* line 800, ../dev/scss/main.scss */
+/* line 1079, ../dev/scss/main.scss */
 footer ul.ft-menu {
   width: 530px;
   top: 20px;
@@ -960,7 +1403,7 @@ footer ul.ft-menu {
   position: absolute;
   margin-left: -250px;
 }
-/* line 806, ../dev/scss/main.scss */
+/* line 1085, ../dev/scss/main.scss */
 footer ul.ft-menu li {
   display: inline;
   vertical-align: middle;
@@ -968,23 +1411,23 @@ footer ul.ft-menu li {
   padding: 0 20px;
   border-right: 1px solid #fffac6;
 }
-/* line 810, ../dev/scss/main.scss */
+/* line 1089, ../dev/scss/main.scss */
 footer ul.ft-menu li:first-child {
   content: "";
   display: block;
   border-left: 1px solid #fffac6;
   display: inline;
 }
-/* line 813, ../dev/scss/main.scss */
+/* line 1092, ../dev/scss/main.scss */
 footer ul.ft-menu a:link, footer ul.ft-menu avisited {
   color: #fffac6;
 }
-/* line 814, ../dev/scss/main.scss */
+/* line 1093, ../dev/scss/main.scss */
 footer ul.ft-menu a:hover {
   color: #fff;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 800, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 1079, ../dev/scss/main.scss */
   footer ul.ft-menu {
     width: 100%;
     margin: auto;
@@ -993,24 +1436,39 @@ footer ul.ft-menu a:hover {
     text-align: center;
     box-sizing: border-box;
   }
-  /* line 824, ../dev/scss/main.scss */
+  /* line 1103, ../dev/scss/main.scss */
   footer ul.ft-menu li {
     line-height: 2.0;
   }
 }
-/* line 830, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 1079, ../dev/scss/main.scss */
+  footer ul.ft-menu {
+    width: 100%;
+    margin: auto;
+    padding: 0 10px;
+    left: 0;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  /* line 1114, ../dev/scss/main.scss */
+  footer ul.ft-menu li {
+    line-height: 2.0;
+  }
+}
+/* line 1120, ../dev/scss/main.scss */
 footer h1.logo {
   top: 80px;
   left: 50%;
   margin: 0 auto auto -138px;
   position: absolute;
 }
-/* line 835, ../dev/scss/main.scss */
+/* line 1125, ../dev/scss/main.scss */
 footer h1.logo img {
   width: 276px;
 }
-@media only screen and (min-width: 0) and (max-width: 480px) {
-  /* line 830, ../dev/scss/main.scss */
+@media only screen and (min-width: 320px) and (orientation: portrait) {
+  /* line 1120, ../dev/scss/main.scss */
   footer h1.logo {
     width: 100%;
     top: 50%;
@@ -1018,12 +1476,26 @@ footer h1.logo img {
     margin: auto;
     text-align: center;
   }
-  /* line 844, ../dev/scss/main.scss */
+  /* line 1134, ../dev/scss/main.scss */
   footer h1.logo img {
     width: 138px;
   }
 }
-/* line 850, ../dev/scss/main.scss */
+@media only screen and (min-width: 321px) and (max-width: 768px) and (orientation: landscape) {
+  /* line 1120, ../dev/scss/main.scss */
+  footer h1.logo {
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  /* line 1144, ../dev/scss/main.scss */
+  footer h1.logo img {
+    width: 138px;
+  }
+}
+/* line 1150, ../dev/scss/main.scss */
 footer address.copyright {
   width: 220px;
   margin-left: -110px;
@@ -1033,19 +1505,19 @@ footer address.copyright {
   position: relative;
 }
 
-/* line 863, ../dev/scss/main.scss */
+/* line 1163, ../dev/scss/main.scss */
 #post-data {
   display: none;
 }
 
-/* line 866, ../dev/scss/main.scss */
+/* line 1166, ../dev/scss/main.scss */
 .inline_content {
   width: 100%;
   overflow: hidden;
   font-size: 2.0rem !important;
 }
 
-/* line 871, ../dev/scss/main.scss */
+/* line 1171, ../dev/scss/main.scss */
 #boxer.inline {
   font-size: 1.4rem;
 }

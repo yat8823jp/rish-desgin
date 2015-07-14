@@ -10,7 +10,16 @@
 	<!--[if IE]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+		ga('create', 'UA-65107369-1', 'auto');
+		ga('send', 'pageview');
+
+	</script>
 	<title>Rish-Design</title>
 </head>
 <body id="pagetop" class="index">
@@ -19,17 +28,17 @@
 
 		<header class="sec1" id="sec1">
 			<h1 class="logo"><img src="img/rish-design-logo1.png" alt="Rish-Design" width="" height="" class="logo"></h1>
-			<div class="top-arrow-bottom"><a href="#sec2"><img src="img/top_arrow_bottom.gif" alt="↓" width="" height=""></a></div>
+			<div class="top-arrow-bottom"><a href="#sec2"><img src="img/top_arrow_bottom.gif" alt="↓"></a></div>
 		</header><!--/.sec1-->
 
 		<section class="sec2" id="sec2">
-			<h1 class="headline"><img src="img/sec2_headline.png" alt="About" width="" height="" class="logo" data-sp-img="img/sp_about.png"></h1>
+			<h1 class="headline"><img src="img/sec2_headline.png" alt="About" class="logo" data-sp-img="img/sp_about.png"></h1>
 			<div class="l-img-r-content content">
 				<div class="left">
-					<img src="img/photo.jpg" alt="" width="" alt="photo" class="photo">
+					<img src="img/photo.jpg" alt="photo" class="photo">
 					<ul class="sns-ico">
-						<li class="ico-twitter"><a href="https://twitter.com/yat8823jp"><img src="img/ico_twitter.png" width="29" height="24" alt=""></a></li>
-						<li class="ico-facebook"><a href="https://www.facebook.com/yat8823jp"><img src="img/ico_facebook.png" width="25" height="25" alt=""></a></li>
+						<li class="ico-twitter"><a href="https://twitter.com/yat8823jp"><img src="img/ico_twitter.png" width="29" height="24" alt="twitter"></a></li>
+						<li class="ico-facebook"><a href="https://www.facebook.com/yat8823jp"><img src="img/ico_facebook.png" width="25" height="25" alt="facebook"></a></li>
 					</ul>
 				</div><!--/.left-->
 				<div class="right">
@@ -132,7 +141,7 @@
 				<ul class="portfolio-main">
 
 					<li class="portfolio-main-1">
-						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="Rish-Design" width=""></p>
+						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="Rish-Design"></p>
 						<dl class="comment">
 							<dt>Rish-Desin 事業サイト</dt>
 							<dd>デザイン / コーディング / レスポンシブ / jQuery / PHP</dd>
@@ -140,7 +149,7 @@
 					</li><!--/.portfolio-main-1-->
 
 					<li class="portfolio-main-2">
-						<p class="image"><a href="http://ii-s.biz/m/" target="_blank"><img src="img/portfolio/portfolio_main_2.png" alt="I.I.S" width=""></a></p>
+						<p class="image"><a href="http://ii-s.biz/m/" target="_blank"><img src="img/portfolio/portfolio_main_2.png" alt="I.I.S"></a></p>
 						<dl class="comment">
 							<dt>SOHO・フリーランスエンジニア(原克志) I.I.S. 様</dt>
 							<dd>スマートフォンサイトデザイン / コーディング / jQuery</dd>
@@ -197,7 +206,7 @@
 		</section><!--/.sec2-->
 
 		<section class="sec5" id="sec5">
-			<h1 class="headline"><img src="img/sec5_headline.png" alt="contact" width="711" height="" class="logo" data-sp-img="img/sp_contact.png"></h1>
+			<h1 class="headline"><img src="img/sec5_headline.png" alt="contact" class="logo" data-sp-img="img/sp_contact.png"></h1>
 
 			<div class="check-form-slide">
 
@@ -212,7 +221,7 @@
 							<dd><input type="text" id="qmail" name="qmail" size="40" class="validate[required,custom[email]] text-input"></dd>
 							<dt>* お問い合せの種類</dt>
 							<dd><select id="qtype" name="qtype" class="validate[required] type-select">
-								<option value="">--選択してください--</option>
+								<option value="" selected>--選択してください--</option>
 								<option value="ご相談">ご相談</option>
 								<option value="見積依頼">見積依頼</option>
 								<option value="その他">その他</option>
@@ -254,31 +263,36 @@
 
 			</div><!--/.check-form-slide-->
 
-			<dl class="privacy">
-				<dt><h2>プライバシー</h2></dt>
-				<dd>Rish-Designでは頂戴しましたメールアドレスを利用し、無理な勧誘、スパムメール、第三者への開示等は行いませんのでご安心ください。以下に個人情報の利用目的を記載させていただきます。</dd>
-				<dt><h3>個人情報の利用目的</h3></dt>
-				<dd>お客様の情報を以下の目的で利用いたします。以下目的以外でお客様の個人情報を取得する際は、あらかじめ利用目的を明示いたします。
-					<ul>
-						<li>お客様からのお問い合わせに対する回答。</li>
-						<li>お客様からのお見積りに対する回答。</li>
-						<li>お客様からのご依頼に対する業務進行のやりとり。</li>
-						<li>Rish-Designの展開するサービスのマーケティング活動及び、告知。</li>
-					</ul>
-				</dd>
-				<dt><h3>個人情報の第三者への開示・提供の禁止</h3></dt>
-				<dd>Rish-designではお客様よりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。
-					<ul>
-						<li>お客様よりあらかじめ同意を得ている会社に提供する場合。</li>
-				    <li>法令に基づく場合。。</li>
-				    <li>当方および関連する企業・個人等の権利や財産が危害、損失を受け（もしくはその可能性が生じ）、これらを保護する必要があるとき。</li>
-				    <li>人の生命、身体又は財産の保護のために必要がある場合であって、お客様の同意を得ることが困難であるとき。</li>
-				    <li>国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、お客様の同意を得ることにより当該事務の遂行に支障を及ぼす恐れがあるとき。</li>
-					</ul>
-				</dd>
-				<dt><h3>本方針の変更</h3></dt>
-				<dd>本方針の内容は変更されることがあります。変更後の本方針については、当方が別途定める場合を除いて、当サイトに掲載した時から効力を生じるものとします。</dd>
-			</dl>
+			<div class="privacy-box">
+				<dl class="privacy">
+					<dt><h2>プライバシー</h2></dt>
+					<dd>Rish-Designでは頂戴しましたメールアドレスを利用し、無理な勧誘、スパムメール、第三者への開示等は行いませんのでご安心ください。以下に個人情報の利用目的を記載させていただきます。</dd>
+					<dt><h3>個人情報の利用目的</h3></dt>
+					<dd>お客様の情報を以下の目的で利用いたします。以下目的以外でお客様の個人情報を取得する際は、あらかじめ利用目的を明示いたします。
+						<ul>
+							<li>お客様からのお問い合わせに対する回答。</li>
+							<li>お客様からのお見積りに対する回答。</li>
+							<li>お客様からのご依頼に対する業務進行のやりとり。</li>
+							<li>Rish-Designの展開するサービスのマーケティング活動及び、告知。</li>
+						</ul>
+					</dd>
+				</dl>
+				<p class="toggle-bt"><a href="#"><img src="img/tg_open_bt.jpg" alt="続きを読む" width="" height=""></a></p>
+				<dl class="privacy-hidden">
+					<dt><h3>個人情報の第三者への開示・提供の禁止</h3></dt>
+					<dd>Rish-designではお客様よりお預かりした個人情報を適切に管理し、次のいずれかに該当する場合を除き、個人情報を第三者に開示いたしません。
+						<ul>
+							<li>お客様よりあらかじめ同意を得ている会社に提供する場合。</li>
+					    <li>法令に基づく場合。</li>
+					    <li>当方および関連する企業・個人等の権利や財産が危害、損失を受け（もしくはその可能性が生じ）、これらを保護する必要があるとき。</li>
+					    <li>人の生命、身体又は財産の保護のために必要がある場合であって、お客様の同意を得ることが困難であるとき。</li>
+					    <li>国の機関若しくは地方公共団体又はその委託を受けた者が法令の定める事務を遂行することに対して協力する必要がある場合であって、お客様の同意を得ることにより当該事務の遂行に支障を及ぼす恐れがあるとき。</li>
+						</ul>
+					</dd>
+					<dt><h3>本方針の変更</h3></dt>
+					<dd>本方針の内容は変更されることがあります。変更後の本方針については、当方が別途定める場合を除いて、当サイトに掲載した時から効力を生じるものとします。</dd>
+				</dl>
+			</div><!--/privacy-box-->
 
 
 		</section><!--/.sec5-->
@@ -288,7 +302,7 @@
 				<li><a href="#pagetop">TOP</a></li>
 				<li><a href="#sec2">About</a></li>
 				<li><a href="#sec3">Price List</a></li>
-				<li><a href="#sec4">Portfoliio</a></li>
+				<li><a href="#sec4">Portfolio</a></li>
 				<li><a href="#sec5">Contact</a></li>
 			</ul>
 			<h1 class="logo"><img src="img/rish-design-logo2.png" alt="Rish-Design" width="" height="" class="logo"></h1>
@@ -308,6 +322,7 @@
 	<script src="js/jquery.smoothScroll.js"></script>
 	<script src="js/slide.js"></script>
 	<script src="js/responsive.js"></script>
+	<script src="js/toggle.js"></script>
 	<!--<script src="js/sm-menu.js"></script>-->
 
 </body>

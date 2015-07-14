@@ -39,9 +39,22 @@ $(document).ready(function(){
       {
         breakpoint: 481,
         settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          // centerMode: true,
+          arrows: true,
+          prevArrow: $( '.slider .slick-prev' ),
+          nextArrow: $( '.slider .slick-next' ),
+          slide: 'li',
+          autoplay: true
+        }
+      },
+      {
+        breakpoint: 321,
+        settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          centerMode: true,
+          // centerMode: true,
           arrows: true,
           prevArrow: $( '.slider .slick-prev' ),
           nextArrow: $( '.slider .slick-next' ),
