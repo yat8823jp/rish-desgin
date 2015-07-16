@@ -143,7 +143,7 @@
 					<li class="portfolio-main-1">
 						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="Rish-Design"></p>
 						<dl class="comment">
-							<dt>Rish-Desin 事業サイト</dt>
+							<dt>Rish-Design 事業サイト</dt>
 							<dd>デザイン / コーディング / レスポンシブ / jQuery / PHP</dd>
 						</dl>
 					</li><!--/.portfolio-main-1-->
