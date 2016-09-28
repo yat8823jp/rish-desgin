@@ -23,6 +23,6 @@ twitter: yat8823jp
 
 ## install
 ### npm install
-`npm install`
+`npm install`  
 `gulp imagemin`
 
