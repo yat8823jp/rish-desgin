@@ -27,8 +27,8 @@ twitter: yat8823jp
 `gulp imagemin`
 
 ## attention
-image_org directory is original data.
-This directory no read.
-You execute a command 'gulp imagemin' for output to img directory.
+image_org directory is original data.  
+This directory no read.  
+You execute a command 'gulp imagemin' for output to img directory.  
 And read img directory.
 
