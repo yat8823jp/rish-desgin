@@ -2,6 +2,7 @@
   "name": "gulp_dev",
   "version": "0.0.2",
   "description": "my gulp \"gulpfile.js\"",
+<<<<<<< HEAD
   "dependencies": {
     "browser-sync": "^2.13.0",
     "gulp": "^3.8.11",
@@ -14,6 +15,19 @@
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
     "imagemin-pngquant": "^5.0.0"
+=======
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "^1.4.1",
+    "browser-sync": "^2.7.13",
+    "gulp": "^3.9.0",
+    "gulp-cssmin": "^0.1.6",
+    "gulp-imagemin": "^2.3.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rename": "^1.2.0"
+>>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
   },
   "main": "gulpfile.js",
   "repository": {

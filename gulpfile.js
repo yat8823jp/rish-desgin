@@ -1,4 +1,5 @@
 // gulpプラグインの読みこみ
+<<<<<<< HEAD
 var gulp = require('gulp'),
 		scss = require( 'gulp-sass' ),
 		imagemin = require( 'gulp-imagemin' ),//画像圧縮
@@ -28,6 +29,29 @@ gulp.task( 'scss', function() {
 		.pipe( pleeease() )
 		.pipe( sourcemaps.write( './' ) )
 		.pipe( gulp.dest( paths.rootDir + '/css' ) );
+=======
+var gulp = require("gulp"),
+    notify = require('gulp-notify'),
+    imagemin = require("gulp-imagemin"),
+    plumber = require('gulp-plumber'),
+    browserSync = require('browser-sync'),
+    jade = require('gulp-jade');
+
+/*
+* imagesフォルダー以下のファイルを監視し、
+* 変更があり次第imagesフォルダー以下の画像の圧縮を実行するタスク
+* */
+gulp.task( 'imagemin', function(){
+  var srcGlob = paths.srcDir + 'dev/images/**/*.+(jpg|jpeg|png|gif|svg)';
+  var dstGlob = paths.dstDir;
+  var imageminOptions = {
+    optimizationLevel: 7
+  };
+
+  gulp.src( srcGlob )
+    .pipe(imagemin( imageminOptions ))
+    .pipe(gulp.dest( dstGlob ));
+>>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 });
 
 /*
@@ -52,28 +76,24 @@ gulp.task( 'imagemin', function(){
 
 
 gulp.task('browser-sync', function() {
-	// browserSyncが、MAMPのディレクトリ構造と紐づきます
+	gulp.src('./') //Webサーバーで表示するサイトのルートディレクトリを指定
+
 	browserSync({
-		proxy: "localhost:8888"
-	});
+		watchTask: true,
+		proxy: "localhost:8888",
+		startPath: "/rish-design/"
+    });
+});
+
+gulp.task('bsReload', function() {
+	browserSync.reload();
 });
 
 /**
 * Task
  */
-gulp.task('HTML:reload', function() {
-	gulp.src('./**/*.html')
-		.pipe( browserSync.reload({ stream:true }) );
-})
-gulp.task('PHP:reload', function() {
-	gulp.src('./**/*.php')
-		.pipe( browserSync.reload({ stream:true }) );
-})
-gulp.task('JS:reload', function() {
-	gulp.src('./**/*.js')
-		.pipe( browserSync.reload({ stream:true }) );
-})
 
+<<<<<<< HEAD
 
 /**
 * Command
@@ -87,4 +107,13 @@ gulp.task('default', ['browser-sync'],function(){
 	// *
 	// gulp.watch('./**/*.html',['HTML:reload']);
 	// gulp.watch('./**/*.js',['JS:reload']);
+=======
+gulp.task("default", ['browser-sync'], function() {
+  gulp.watch("dev/images/**/*.+(jpg|jpeg|png|gif|svg)",["imagemin"]);
+  gulp.watch("sass/**/*.scss",["sass"]);
+  gulp.watch('./**/*.html',['bsReload']);
+  gulp.watch('js/**/*.js',['bsReload']);
+  gulp.watch('./**/*.css',['bsReload']);
+  gulp.watch('./**/*.php',['bsReload']);
+>>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 });
