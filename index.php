@@ -42,11 +42,7 @@
 					</ul>
 				</div><!--/.left-->
 				<div class="right">
-<<<<<<< HEAD
 					<p class="sec-text">WebデザイナーのYATといいます（ブログはこちら<a href="http://wp.yat-net.com/" target="_blank">YATのblog</a>）。ECの運用を中心に、デザイン、コーディング、サーバー関係、プログラミング、SEO、マーケティング等を仕事で携わってきました。<br>
-=======
-					<p class="sec-text">ECの運用を中心に、デザイン、コーディング、サーバー関係、プログラミング、SEO、マーケティング等を仕事で携わってきました。<br>
->>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 					2015年6月29日より個人事業として独立し、大阪府八尾市にて、フリーランスのWebクリエイターとして活動しています。<br>
 					これまでの経験を活かし、ホームページを作って終わるのではなく、作ったサイトをどのように活用し、どのように目的を達成していくのかまで一緒に考えることができますので、今あるホームページをどうやって運用すればいいのか？といったお悩みをお抱えのサイトオーナー様からも、お気軽にご相談いただければと思います。</p>
 
@@ -145,17 +141,10 @@
 				<ul class="portfolio-main">
 
 					<li class="portfolio-main-1">
-<<<<<<< HEAD
 						<p class="image"><a href="http://someone-ent.com/" target="_blank"><img src="img/portfolio/portfolio_main_1.png" alt="someone"></a></p>
 						<dl class="comment">
 							<dt>someone 様</dt>
 							<dd>デザイン / コーディング / レスポンシブ / jQuery / WordPress</dd>
-=======
-						<p class="image"><img src="img/portfolio/portfolio_main_1.png" alt="Rish-Design"></p>
-						<dl class="comment">
-							<dt>Rish-Design 事業サイト</dt>
-							<dd>デザイン / コーディング / レスポンシブ / jQuery / PHP</dd>
->>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 						</dl>
 					</li><!--/.portfolio-main-1-->
 
@@ -179,7 +168,6 @@
 				<ul class="portfolio-sub">
 
 					<li class="portfolio-sub-item">
-<<<<<<< HEAD
 						<p class="image"><a href="http://rish-design.com/" target="_blank"><img src="img/portfolio/portfolio_sub_3.png" alt="Rish-Design" width="222"></a></p>
 						<dl class="comment">
 							<dt>Rish-Design<br>（当サイト）</dt>
@@ -188,8 +176,6 @@
 					</li><!--/.portfolio-sub-item-->
 
 					<li class="portfolio-sub-item">
-=======
->>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 						<p class="image"><a href="http://juku-ies.com/" target="_blank"><img src="img/portfolio/portfolio_sub_1.png" alt="ies進学塾" width="222"></a></p>
 						<dl class="comment">
 							<dt>進学塾ies 様</dt>
@@ -241,22 +227,14 @@
 							<dd><input type="text" id="qname" name="qname" size="40" class="validate[required] text-input"></dd>
 							<dt>* メールアドレス</dt>
 							<dd><input type="text" id="qmail" name="qmail" size="40" class="validate[required,custom[email]] text-input"></dd>
-<<<<<<< HEAD
 							<dt>* お問い合わせの種類</dt>
-=======
-							<dt>* お問い合せの種類</dt>
->>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 							<dd><select id="qtype" name="qtype" class="validate[required] type-select">
 								<option value="" selected>--選択してください--</option>
 								<option value="ご相談">ご相談</option>
 								<option value="見積依頼">見積依頼</option>
 								<option value="その他">その他</option>
 								</select></dd>
-<<<<<<< HEAD
 							<dt>* お問い合わせ内容</dt>
-=======
-							<dt>* お問い合せ内容</dt>
->>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 							<dd>
 								<textarea id="qcomment" name="qcomment" rows="4" cols="40" class="validate[required] text-input"></textarea>
 							</dd>
@@ -275,15 +253,9 @@
 							<dd id="cname"></dd>
 							<dt>* メールアドレス</dt>
 							<dd id="cmail"></dd>
-<<<<<<< HEAD
 							<dt>* お問い合わせの種類</dt>
 							<dd id="ctype"></dd>
 							<dt>* お問い合わせ内容</dt>
-=======
-							<dt>* お問い合せの種類</dt>
-							<dd id="ctype"></dd>
-							<dt>* お問い合せ内容</dt>
->>>>>>> 8d970645d91408e1054e0093f8f57a0e5e6fbc18
 							<dd id="ccomment"></dd>
 						</dl>
 						<div class="set-bt">
