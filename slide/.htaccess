@@ -1,0 +1,8 @@
+AddType application/x-httpd-php .php .html
+AuthType Basic
+AuthName "Please enter your password"
+AuthUserFile /home/users/1/lolipop.jp-dp19093236/web/basic/.dhwpwd
+require valid-user
+<Files ~ "^\.(htaccess|htpasswd)$">
+	deny from all
+</Files>

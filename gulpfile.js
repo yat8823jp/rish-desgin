@@ -1,20 +1,55 @@
 // gulpプラグインの読みこみ
-var gulp = require('gulp');
-// 画像を圧縮するプラグインの読み込み
-var imagemin = require("gulp-imagemin");
-var browserSync = require('browser-sync');
+var gulp = require('gulp'),
+		scss = require( 'gulp-sass' ),
+		imagemin = require( 'gulp-imagemin' ),//画像圧縮
+		imageminPngquant = require( 'imagemin-pngquant' ),//png画像の圧縮
+		plumber = require( 'gulp-plumber' ),//エラー通知
+		notify = require( 'gulp-notify' ),//エラー通知
+		pleeease = require( 'gulp-pleeease' ),//ベンダープレフィックス
+		browserSync = require('browser-sync'),
+		sourcemaps = require( 'gulp-sourcemaps' ),
+		paths = {
+			rootDir : '',
+			dstrootDir : '',
+			srcDir : 'images_org',
+			dstDir : 'img'
+		}
 
 /*
-* imagesフォルダー以下のファイルを監視し、
-* 変更があり次第imagesフォルダー以下の画像の圧縮を実行するタスク
-* */
-gulp.task("watchTask", function() { // 「watchTask」という名前のタスクを登録
-	gulp.watch("img/**", function() {   // imagesフォルダ以下のファイルを監視
-		gulp.src("img/*.png")
-		.pipe(imagemin())
-		.pipe(gulp.dest("minified_image"));
-	});
+ * Sass
+ */
+gulp.task( 'scss', function() {
+	gulp.src( paths.rootDir + '/scss/**/*.scss' )
+		.pipe( sourcemaps.init() )
+		.pipe( plumber({
+			errorHandler: notify.onError( 'Error: <%= error.message %>' )
+		}) )
+		.pipe( scss() )
+		.pipe( pleeease() )
+		.pipe( sourcemaps.write( './' ) )
+		.pipe( gulp.dest( paths.rootDir + '/css' ) );
 });
+
+/*
+ * Imagemin
+ */
+gulp.task( 'imagemin', function(){
+	var srcGlob = paths.srcDir + '/**/*.+(jpg|jpeg|png|gif|svg)';
+	var dstGlob = paths.dstDir;
+	var imageminOptions = {
+		optimizationLevel: 7,
+		use: imageminPngquant( {quality: '65-80', speed: 1 } )
+	};
+
+	gulp.src( srcGlob )
+		.pipe( plumber ( {
+			errorHandler: notify.onError( 'Error: <%= error.message %>' )
+		} ) )
+		.pipe( imagemin( imageminOptions ) )
+		.pipe( gulp.dest( paths.dstDir ) );
+});
+
+
 
 gulp.task('browser-sync', function() {
 	// browserSyncが、MAMPのディレクトリ構造と紐づきます
@@ -44,8 +79,9 @@ gulp.task('JS:reload', function() {
 * Command
  */
 gulp.task('default', ['browser-sync'],function(){
+	gulp.watch( paths.rootDir + '/scss/**/*.scss', ['scss'] );
 	gulp.watch('./**/*.php',['PHP:reload']);
-	
+
 	// **
 	// HTMLやJSなどがあれば、下記を有効にする
 	// *
