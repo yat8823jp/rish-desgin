@@ -1,8 +1,4 @@
 @charset "utf-8";
-@import "compass/reset";
-// @import "modules/scss_media_queries/scss/media_queries";
-//https://github.com/nonakaryuichi/scss_media_queries
-
 //------------------------------------------------------//
 //Var
 //------------------------------------------------------//
@@ -949,7 +945,7 @@ h1.headline{
 		width: 288px;
 		height: 88px;
 		padding: 0;
-		margin: 80px auto auto auto;
+		margin: 40px auto auto auto;
 		clear: both;
 		cursor: pointer;
 		line-height: 0;
@@ -963,6 +959,11 @@ h1.headline{
 			margin-top: 20px;
 		}//@media #{$xs}
 	}//.submit-bt
+
+	.set-bt {
+    width: 280px;
+    margin: auto;
+	}
 
 	.set-bt{
 		&:after{ @include clearfix; }

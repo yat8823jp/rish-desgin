@@ -6,7 +6,7 @@ var gulp = require('gulp'),
 		plumber = require( 'gulp-plumber' ),//エラー通知
 		notify = require( 'gulp-notify' ),//エラー通知
 		pleeease = require( 'gulp-pleeease' ),//ベンダープレフィックス
-		browserSync = require('browser-sync'),
+		browserSync = require( 'browser-sync' ),
 		sourcemaps = require( 'gulp-sourcemaps' ),
 		paths = {
 			rootDir : '',
@@ -19,7 +19,7 @@ var gulp = require('gulp'),
  * Sass
  */
 gulp.task( 'scss', function() {
-	gulp.src( paths.rootDir + '/scss/**/*.scss' )
+	gulp.src( paths.rootDir + 'scss/**/*.scss' )
 		.pipe( sourcemaps.init() )
 		.pipe( plumber({
 			errorHandler: notify.onError( 'Error: <%= error.message %>' )
@@ -27,7 +27,7 @@ gulp.task( 'scss', function() {
 		.pipe( scss() )
 		.pipe( pleeease() )
 		.pipe( sourcemaps.write( './' ) )
-		.pipe( gulp.dest( paths.rootDir + '/css' ) );
+		.pipe( gulp.dest( paths.rootDir + 'css' ) );
 });
 
 /*
@@ -52,28 +52,41 @@ gulp.task( 'imagemin', function(){
 
 
 gulp.task('browser-sync', function() {
-	gulp.src('./') //Webサーバーで表示するサイトのルートディレクトリを指定
-
+	// browserSyncが、MAMPのディレクトリ構造と紐づきます
 	browserSync({
-		watchTask: true,
 		proxy: "localhost:8888",
-		startPath: "/rish-design/"
-    });
-});
-
-gulp.task('bsReload', function() {
-	browserSync.reload();
+		startPath: "/rish/"
+	});
 });
 
 /**
 * Task
  */
+gulp.task('HTML:reload', function() {
+	gulp.src('./**/*.html')
+		.pipe( browserSync.reload({ stream:true }) );
+})
+gulp.task('PHP:reload', function() {
+	gulp.src('./**/*.php')
+		.pipe( browserSync.reload({ stream:true }) );
+})
+gulp.task('JS:reload', function() {
+	gulp.src('./**/*.js')
+		.pipe( browserSync.reload({ stream:true }) );
+})
 
-gulp.task("default", ['browser-sync'], function() {
-  gulp.watch("dev/images/**/*.+(jpg|jpeg|png|gif|svg)",["imagemin"]);
-  gulp.watch("sass/**/*.scss",["sass"]);
-  gulp.watch('./**/*.html',['bsReload']);
-  gulp.watch('js/**/*.js',['bsReload']);
-  gulp.watch('./**/*.css',['bsReload']);
-  gulp.watch('./**/*.php',['bsReload']);
+
+
+/**
+* Command
+ */
+gulp.task('default', ['browser-sync'],function(){
+	gulp.watch( paths.rootDir + 'scss/**/*.scss', ['scss'] );
+	gulp.watch('./**/*.php',['PHP:reload']);
+
+	// **
+	// HTMLやJSなどがあれば、下記を有効にする
+	// *
+	// gulp.watch('./**/*.html',['HTML:reload']);
+	// gulp.watch('./**/*.js',['JS:reload']);
 });

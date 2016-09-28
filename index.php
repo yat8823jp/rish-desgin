@@ -6,10 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="js/Boxer/jquery.fs.boxer.min.css">
 	<link rel="stylesheet" type="text/css" href="js/jQuery-Validation-Engine/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="js/slick-1.5.0/slick.css" media="all">
+	<link rel="stylesheet" type="text/css" href="css/asset/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
