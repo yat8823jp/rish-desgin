@@ -160,8 +160,8 @@
 
 			<div class="slider">
 
-				<div class="slick-prev"><a href="#prev"><img src="img/slick_prev.png" alt="&lt;"></a></div>
-				<div class="slick-next"><a href="#next"><img src="img/slick_next.png" alt="&gt;"></a></div>
+				<div class="slick-prev"><a href="#prev" class="is-ui-arrow"><img src="img/slick_prev.png" alt="&lt;"></a></div>
+				<div class="slick-next"><a href="#next" class="is-ui-arrow"><img src="img/slick_next.png" alt="&gt;"></a></div>
 
 				<ul class="portfolio-sub">
 
@@ -319,7 +319,7 @@
 
 	</article><!--/.wrap-->
 
-	<script src="js/query-1.11.3.min.js"></script>
+	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/jQuery-Validation-Engine/js/jquery.validationEngine.js"></script>
 	<script src="js/jQuery-Validation-Engine/js/languages/jquery.validationEngine-ja.js"></script>
 	<script src="js/slick-1.5.0/slick.js"></script>
