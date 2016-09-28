@@ -1,0 +1,27 @@
+//------------------------------------------------------//
+//Var
+//------------------------------------------------------//
+$main-color: #26b1d2;
+$gold-color: #fffac6;
+$gold-color-hover: #fff;
+
+$link: #fffac6;
+$hover: #fff;
+
+//media-query
+/* スマホ (-l///landoscape)
+-------------------------------------------------- */
+$xs: "only screen and (min-width:320px) and (orientation:portrait) ";
+$xs-l: "only screen and (min-width:321px) and (max-width:768px) and (orientation:landscape)";
+
+/* タブレット
+-------------------------------------------------- */
+$sm: "only screen and (min-width:769px) and (max-width:968px)";
+
+/* PC(small)
+-------------------------------------------------- */
+$md: "only screen and (min-width:970px) and (max-width:1169px)";
+
+/* PC(large)
+-------------------------------------------------- */
+$lg: "only screen and (min-width:1170px)";

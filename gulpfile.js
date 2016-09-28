@@ -74,6 +74,10 @@ gulp.task('JS:reload', function() {
 	gulp.src('./**/*.js')
 		.pipe( browserSync.reload({ stream:true }) );
 })
+gulp.task('SCSS:reload', function() {
+	gulp.src('./**/*.scss')
+		.pipe( browserSync.reload({ stream:true }) );
+})
 
 
 

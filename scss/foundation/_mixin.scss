@@ -1,0 +1,73 @@
+//------------------------------------------------------//
+//mixin
+//------------------------------------------------------//
+
+@mixin beforeafter{
+	content: "";
+	display: block;
+}
+
+@mixin elmhidden{
+	text-indent: -10000px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+@mixin elmhidden{
+	text-indent: -10000px;
+	// overflow: hidden;
+	// text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+
+}
+
+@mixin clearfix{
+	content: "";
+	clear: both;
+	display: block;
+}
+
+@mixin gradation-bt($value, $g1 ,$g2){
+	@each $prefix in -webkit-, -o-, -ms-, ''{
+		#{$prefix}radius: $value;
+	}
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '$g1', endColorstr = '$g2')";
+	border-radius: $value;
+	background-image: -moz-linear-gradient(top, $g1, $g2);
+	background-image: -ms-linear-gradient(top, $g1, $g2);
+	background-image: -o-linear-gradient(top, $g1, $g2);
+	background-image: -webkit-gradient(linear, center top, center bottom, from($g1), to($g2));
+	background-image: -webkit-linear-gradient(top, $g1, $g2);
+	background-image: linear-gradient(top, $g1, $g2);
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding-box;
+	background-clip: padding-box;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '$g1', endColorstr = '$g2');
+}
+
+@mixin sp-header-bg{
+	min-width: 320px;
+	min-height: (612/2)+px;
+	height: (842/2)+px;
+	background-image: url(../img/sp_head_bg.png);
+	background-position: left bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@mixin sp-login-bt($width, $height){
+	width: $width;
+	height: $height;
+	margin: auto;
+	border: 1px solid #fff;
+	background: #45d9e3; /* Old browsers */
+	background: linear-gradient(to bottom,  #45d9e3 0%,#2994a6 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45d9e3', endColorstr='#2994a6',GradientType=0 ); /* IE6-9 */
+	color: #fff;
+	font-size: 2.0rem;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+	a{ color: #fff; text-decoration: none; }
+}

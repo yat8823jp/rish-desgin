@@ -25,7 +25,10 @@
 
 		<header class="sec1" id="sec1">
 			<h1 class="logo"><img src="img/rish-design-logo1.png" alt="Rish-Design" width="" height="" class="logo"></h1>
-			<div class="top-arrow-bottom"><a href="#sec2"><img src="img/top_arrow_bottom.gif" alt="↓"></a></div>
+			<div class="top-arrow-bottom"><a href="#sec2"><img src="img/top_arrow_bottom.png" alt="↓"></a></div>
+			<video autoplay loop muted>
+				<source src="mv/e23.mp4" type="video/mp4">
+			</video>
 		</header><!--/.sec1-->
 
 		<section class="sec2" id="sec2">

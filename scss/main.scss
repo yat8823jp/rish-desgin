@@ -1,156 +1,13 @@
 @charset "utf-8";
-//------------------------------------------------------//
-//Var
-//------------------------------------------------------//
-$main-color: #26b1d2;
-$gold-color: #fffac6;
-$gold-color-hover: #fff;
 
-$link: #fffac6;
-$hover: #fff;
+// ==========================================================================
+// Foundation
+// ==========================================================================
+@import "foundation/_variable";
+@import "foundation/_mixin";
+@import "foundation/_base";
 
-//media-query
-/* スマホ (-l///landoscape)
--------------------------------------------------- */
-$xs: "only screen and (min-width:320px) and (orientation:portrait) ";
-$xs-l: "only screen and (min-width:321px) and (max-width:768px) and (orientation:landscape)";
 
-/* タブレット
--------------------------------------------------- */
-$sm: "only screen and (min-width:769px) and (max-width:968px)";
-
-/* PC(small)
--------------------------------------------------- */
-$md: "only screen and (min-width:970px) and (max-width:1169px)";
-
-/* PC(large)
--------------------------------------------------- */
-$lg: "only screen and (min-width:1170px)";
-
-//------------------------------------------------------//
-//mixin
-//------------------------------------------------------//
-
-@mixin beforeafter{
-	content: "";
-	display: block;
-}
-
-@mixin elmhidden{
-	text-indent: -10000px;
-	white-space: nowrap;
-	overflow: hidden;
-}
-
-@mixin elmhidden{
-	text-indent: -10000px;
-	// overflow: hidden;
-	// text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-
-}
-
-@mixin clearfix{
-	content: "";
-	clear: both;
-	display: block;
-}
-
-@mixin gradation-bt($value, $g1 ,$g2){
-	@each $prefix in -webkit-, -o-, -ms-, ''{
-		#{$prefix}radius: $value;
-	}
-	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '$g1', endColorstr = '$g2')";
-	border-radius: $value;
-	background-image: -moz-linear-gradient(top, $g1, $g2);
-	background-image: -ms-linear-gradient(top, $g1, $g2);
-	background-image: -o-linear-gradient(top, $g1, $g2);
-	background-image: -webkit-gradient(linear, center top, center bottom, from($g1), to($g2));
-	background-image: -webkit-linear-gradient(top, $g1, $g2);
-	background-image: linear-gradient(top, $g1, $g2);
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-	background-clip: padding-box;
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '$g1', endColorstr = '$g2');
-}
-
-@mixin sp-header-bg{
-	min-width: 320px;
-	min-height: (612/2)+px;
-	height: (842/2)+px;
-	background-image: url(../img/sp_head_bg.png);
-	background-position: left bottom;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-
-@mixin sp-login-bt($width, $height){
-	width: $width;
-	height: $height;
-	margin: auto;
-	border: 1px solid #fff;
-	background: #45d9e3; /* Old browsers */
-	background: linear-gradient(to bottom,  #45d9e3 0%,#2994a6 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45d9e3', endColorstr='#2994a6',GradientType=0 ); /* IE6-9 */
-	color: #fff;
-	font-size: 2.0rem;
-	display: inline-block;
-	vertical-align: middle;
-	text-align: center;
-	a{ color: #fff; text-decoration: none; }
-}
-
-@font-face{
-	font-family: mplus-1p-regular;
-	src: url('../fonts/mplus-1p-regular.ttf')
-	format("truetype");
-}//font-face
-
-@font-face{
-	font-family: mplus-2c-thin;
-	src: url('../fonts/mplus-2c-thin.ttf')
-	format("truetype");
-}//font-face
-
-@font-face{
-	font-family: mplus-2c-medium;
-	src: url('../fonts/mplus-2c-medium.ttf')
-	format("truetype");
-}//font-face
-
-html{
-	width: 100%;
-	height: 100%;
-	font-size: 62.5%; /*10px */
-	font-family: mplus-1p-regular;
-}
-
-body{
-	width: 100%;
-	height: 100%;
-	overflow-x: hidden;
-
-	@media #{$xs}{
-		width: 100%;
-	}//@media #{$xs}
-
-	@media #{$xs-l}{
-		width: 100%;
-	}//@media #{$xs}
-}
-
-article.wrap{
-	height: 100%;
-	min-height: 100%;
-	position: relative;
-
-}
-
-a{
-	&:link, &:visited{ color: $gold-color; }
-	&:hover       { color: $gold-color-hover; }
-}
 
 //-------------------------------------------------------
 //.sec共通
@@ -304,13 +161,12 @@ h1.headline{
 //-------------------------------------------------------
 .sec1{
 	width: 100%;
-	// height: 680px;
 	height: 100%;
 	top: 0;
-	/* height: 380px; */
 	background: url(../img/sec1_bg.png) 50% 0 fixed;
 	position: relative;
 	display: block;
+	z-index: 0;
 
 	@media #{$xs}{
 		height: auto;
@@ -322,11 +178,27 @@ h1.headline{
 		min-height: 100%;
 	}//@media #{$xs}
 
+	video {
+		position: absolute;
+		min-height: 80%;
+		height: 80%;
+		top: 10%;
+		z-index: 2;
+		@media #{$lg}{
+			min-width: 100%;
+			width: 100%;
+			min-height: 100%;
+			height: 100%;
+			top: auto;
+		}
+	}
+
 	h1.logo{
 		top: 50%;
 		left: 50%;
 		margin: -96px auto auto -168px;
 		position: absolute;
+		z-index: 3;
 
 		@media #{$xs}{
 			img{ width: (336/2)+px; }
@@ -342,11 +214,14 @@ h1.headline{
 	div.top-arrow-bottom{
 		// width: 100%;
 		position: absolute;
-		top: 92%;
+		// top: 92%;
+		bottom: 5%;
 		left: 50%;
-		margin: auto auto auto -14px;
+		// margin: auto auto auto -15px;
+		margin: auto auto 0 -15px;
+		z-index: 3;
 		img{
-			width: 28px;
+			width: 30px;
 		}
 	}
 
