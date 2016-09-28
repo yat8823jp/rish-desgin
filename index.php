@@ -3,7 +3,6 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="js/Boxer/jquery.fs.boxer.min.css">
 	<link rel="stylesheet" type="text/css" href="js/jQuery-Validation-Engine/css/validationEngine.jquery.css" />
 	<link rel="stylesheet" href="js/slick-1.5.0/slick.css" media="all">
 	<link rel="stylesheet" type="text/css" href="css/asset/reset.css">
@@ -329,7 +328,6 @@
 	<script src="js/slide.js"></script>
 	<script src="js/responsive.js"></script>
 	<script src="js/toggle.js"></script>
-	<!--<script src="js/sm-menu.js"></script>-->
 
 </body>
 </html>
