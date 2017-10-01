@@ -211,21 +211,42 @@ h1.headline{
 			img{ width: (336/2)+px; }
 			margin: (-198/4)+px auto auto (-336/4)+px;
 		}//@media #{$xs}
+		&--404 {
+			@extend h1.logo;
+			margin: -162px auto auto -230px;
+
+			@media #{$xs}{
+				margin: (-162/2)+px auto auto (-230/2)+px;
+				img { width: (478/2)+px; }
+			}
+			@media #{$xs-l}{
+				margin: (-162/2)+px auto auto (-230/2)+px;
+				img { width: (478/2)+px; }
+			}//@media #{$xs}
+		}
 	}//h1.logo
 
 	div.top-arrow-bottom{
-		// width: 100%;
 		position: absolute;
-		// top: 92%;
 		bottom: 5%;
 		left: 50%;
-		// margin: auto auto auto -15px;
 		margin: auto auto 0 -15px;
 		z-index: 3;
 		img{
 			width: 30px;
 		}
 	}
+	.gotoppage {
+		@extend div.top-arrow-bottom;
+		font-size: 1.4rem;
+		@media #{$xs}{
+			margin-left: -60px;
+		}
+		@media #{$xs-l}{
+			margin-left: -60px;
+		}
+	}
+
 
 }//.sec1
 
@@ -337,7 +358,6 @@ h1.headline{
 			h2,dt{ font-weight: bold; }
 			h2{ margin-top: 30px; font-size: 1.6rem; line-height: 1.6; }
 			dl{
-				margin-top: 20px;
 				@media #{$xs}{
 					width: 100%;
 					// padding: 10px;
@@ -1047,3 +1067,6 @@ footer{
 	#boxer.inline {
 	  font-size: 1.4rem;
 	}
+
+.u-mb20 { margin-bottom: 20px; }
+.u-ml20 { margin-left: 20px; }

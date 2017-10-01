@@ -7,27 +7,7 @@
 	<link rel="stylesheet" href="js/slick-1.5.0/slick.css" media="all">
 	<link rel="stylesheet" type="text/css" href="css/asset/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="img/ico/favicons/favicon.ico">
-	<link rel="icon" type="image/vnd.microsoft.icon" href="img/ico/favicons/favicon.ico">
-	<link rel="apple-touch-icon" sizes="57x57" href="img/ico/favicons/apple-touch-icon-57x57.png">
-	<link rel="apple-touch-icon" sizes="60x60" href="img/ico/favicons/apple-touch-icon-60x60.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/ico/favicons/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="76x76" href="img/ico/favicons/apple-touch-icon-76x76.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/ico/favicons/apple-touch-icon-114x114.png">
-	<link rel="apple-touch-icon" sizes="120x120" href="img/ico/favicons/apple-touch-icon-120x120.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="img/ico/favicons/apple-touch-icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="152x152" href="img/ico/favicons/apple-touch-icon-152x152.png">
-	<link rel="apple-touch-icon" sizes="180x180" href="img/ico/favicons/apple-touch-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="img/ico/favicons/android-chrome-192x192.png">
-	<link rel="icon" type="image/png" sizes="48x48" href="img/ico/favicons/favicon-48x48.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicons/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicons/favicon-160x160.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="img/ico/favicons/favicon-196x196.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/ico/favicons/favicon-16x16.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/ico/favicons/favicon-32x32.png">
-	<link rel="manifest" href="/manifest.json">
-	<meta name="msapplication-TileColor" content="#2d88ef">
-	<meta name="msapplication-TileImage" content="/mstile-144x144.png">	<script>
+	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -54,9 +34,8 @@
 				<div class="left">
 					<img src="img/photo.jpg" alt="photo" class="photo">
 					<ul class="sns-ico">
-						<li class="ico-twitter"><a href="https://twitter.com/yat8823jp" target="_blank"><img src="img/ico_twitter.png" width="29" height="24" alt="twitter"></a></li>
-						<li class="ico-facebook"><a href="https://www.facebook.com/yat8823jp" target="_blank"><img src="img/ico_facebook.png" width="25" height="25" alt="facebook"></a></li>
-						<li class="ico-github"><a href="https://github.com/yat8823jp/" target="_blank"><img src="img/ico_github.png" width="25" height="25" alt="github"></a></li>
+						<li class="ico-twitter"><a href="https://twitter.com/yat8823jp"><img src="img/ico_twitter.png" width="29" height="24" alt="twitter"></a></li>
+						<li class="ico-facebook"><a href="https://www.facebook.com/yat8823jp"><img src="img/ico_facebook.png" width="25" height="25" alt="facebook"></a></li>
 					</ul>
 				</div><!--/.left-->
 				<div class="right">
@@ -64,9 +43,9 @@
 					2015年6月29日より個人事業として独立し、大阪府八尾市にて、フリーランスのWebクリエイターとして活動しています。<br>
 					これまでの経験を活かし、ホームページを作って終わるのではなく、作ったサイトをどのように活用し、どのように目的を達成していくのかまで一緒に考えることができますので、今あるホームページをどうやって運用すればいいのか？といったお悩みをお抱えのサイトオーナー様からも、お気軽にご相談いただければと思います。</p>
 
-					<h2 class="u-mb20">業務内容</h2>
+					<h2>業務内容</h2>
 
-					<dl class="u-mb20 u-ml20">
+					<dl>
 						<dt>Webサイト制作</dt>
 						<dd>Webデザイン / </dd>
 						<dd>コーディング / </dd>
@@ -74,23 +53,11 @@
 						<dd>サイト運用補佐 等</dd>
 					</dl>
 
-					<dl class="u-ml20">
+					<dl>
 						<dt>デザイン全般</dt>
 						<dd>ロゴデザイン / </dd>
 						<dd>名刺デザイン / </dd>
 						<dd>チラシ作成 等</dd>
-					</dl>
-
-					<h2 class="u-mb20">オープンソースへの貢献</h2>
-					<p class="sec-text u-ml20">オープンソースプロジェクトに関わり、ドキュメントの翻訳やWordPressのプラグイン、テーマ開発、開発環境の公開などを行っています。</p>
-
-					<dl class="u-ml20">
-						<dt class="u-mb20"><a href="https://github.com/yat8823jp/speedy" target="_blank">Speedy</a></dt>
-						<dd>Gulpによる静的サイトの開発環境。htmlの記述にpugを採用</dd>
-						<dt class="u-mb20"><a href="https://github.com/yat8823jp/spycejs" target="_blank">Spycejs</a></dt>
-						<dd>Gulpによる静的サイトの開発環境。htmlの記述にejsを採用</dd>
-						<dt class="u-mb20"><a href="https://ja.wordpress.org/plugins/rd-dashboard-pdf/" target="_blank">RD Dashboard pdf</a></dt>
-						<dd>WordPressのダッシュボードにpdfを表示させる公式ディレクトリ掲載プラグイン。ファイルのアップロードは管理画面から可能。</dd>
 					</dl>
 
 				</div><!--/right-->
@@ -100,9 +67,7 @@
 		<section class="sec3" id="sec3">
 			<h1 class="headline"><img src="img/sec3_headline.png" alt="Pricelist" width="752" height="" class="logo" data-sp-img="img/sp_pricelist.png"></h1>
 			<div class="content">
-				<p class="sec-copy u-mb20">基本的な料金は下記となります。ご不明な点、こちらで該当しない点等、ご相談がありましたら、お気軽にお問い合わせください。</p>
-				<p class="sec-copy u-mb20">デザインは原則レスポンシブ対応をベースにスマートフォン、パソコンを作成させていただいております。まずパソコン版の見え方で全体の方向性が固まってから、スマートフォンの作成。場合によってはタブレットのデザインの作成までがワンセットとなります。パソコンのみやスマートフォンのみの場合はご相談ください。</p>
-				<p class="sec-copy u-mb20">コーディングに関してはFLOCSSなどの設計にもどづいて行っておりますが、サイトのデザインに応じて設計は変動いたします。また、デザイン同様レスポンシブでの対応が基本となります。</p>
+				<p class="sec-copy">基本的な料金は下記となります。ご不明な点、こちらで該当しない点等、ご相談がありましたら、お気軽にお問い合わせください。</p>
 
 				<h2 class="sec3-h2" data-price="headline">Webデザイン・ホームページ作成</h2>
 				<table class="price-table">
@@ -130,6 +95,7 @@
 				      <td data-price="item">ランディングページ</td>
 				      <td data-price="price">150,000円〜</td>
 				    </tr>
+				  </tbody>
 				    <tr>
 				      <td data-price="subtitle">マークアップ＆コーディング</td>
 				      <td data-price="item">テンプレートページ</td>
@@ -145,12 +111,7 @@
 				      <td data-price="item">ランディングページ</td>
 				      <td data-price="price">100,000円〜</td>
 				    </tr>
-						<tr>
-				      <td data-price="subtitle">WordPress実装</td>
-				      <td data-price="item">（コーディングは含みません）</td>
-				      <td data-price="price">200,000円〜</td>
-				    </tr>
-					  </tbody>
+				  </tbody>
 				</table>
 
 				<h2 class="sec3-h2" data-price="headline">デザイン全般</h2>
@@ -188,18 +149,18 @@
 				<ul class="portfolio-main">
 
 					<li class="portfolio-main-1">
-						<p class="image"><a href="https://hsa-japan.co.jp/" target="_blank"><img src="img/portfolio/portfolio_main_1.png" alt="株式会社エイチ・エス・エイ"></a></p>
+						<p class="image"><a href="https://nandemo-nobiru.com/nn-analytics/lp2/" target="_blank"><img src="img/portfolio/portfolio_main_1.png" alt="株式会社ネオロジー様"></a></p>
 						<dl class="comment">
-							<dt>株式会社エイチ・エス・エイ 様</dt>
-							<dd>デザイン / コーディング / レスポンシブ / jQuery / WordPress</dd>
+							<dt>株式会社ネオロジー 様</dt>
+							<dd>ランディングページ デザイン</dd>
 						</dl>
 					</li><!--/.portfolio-main-1-->
 
 					<li class="portfolio-main-2">
-						<p class="image"><a href="https://kitayaryokan.jp/" target="_blank"><img src="img/portfolio/portfolio_main_2.png" alt="喜多屋"></a></p>
+						<p class="image"><a href="http://someone-ent.com/" target="_blank"><img src="img/portfolio/portfolio_main_2.png" alt="someone"></a></p>
 						<dl class="comment">
-							<dt>旅館 喜多屋 様</dt>
-							<dd>デザイン / コーディング / レスポンシブ / jQuery</dd>
+							<dt>someone 様</dt>
+							<dd>デザイン / コーディング / レスポンシブ / jQuery / WordPress</dd>
 						</dl>
 					</li><!--/.portfolio-main-2-->
 
@@ -213,22 +174,6 @@
 				<div class="slick-next"><a href="#next" class="is-ui-arrow"><img src="img/slick_next.png" alt="&gt;"></a></div>
 
 				<ul class="portfolio-sub">
-
-					<li class="portfolio-sub-item">
-						<p class="image"><a href="https://nandemo-nobiru.com/nn-analytics/lp2/" target="_blank"><img src="img/portfolio/portfolio_sub_6.png" alt="someone" width="222"></a></p>
-						<dl class="comment">
-							<dt>株式会社ネオロジー 様</dt>
-							<dd>ランディングページデザイン</dd>
-						</dl>
-					</li><!--/.portfolio-sub-item-->
-
-					<li class="portfolio-sub-item">
-						<p class="image"><a href="http://someone-ent.com/" target="_blank"><img src="img/portfolio/portfolio_sub_5.png" alt="someone" width="222"></a></p>
-						<dl class="comment">
-							<dt>SOMEONE 様</dt>
-							<dd>デザイン / コーディング / レスポンシブ / jQuery / WordPress</dd>
-						</dl>
-					</li><!--/.portfolio-sub-item-->
 
 					<li class="portfolio-sub-item">
 						<p class="image"><a href="http://ii-s.biz/m/" target="_blank"><img src="img/portfolio/portfolio_sub_4.png" alt="I.I.S" width="222"></a></p>
@@ -339,7 +284,7 @@
 
 				<div class="content3">
 					<p class="sec-copy">送信が完了しました。回答までに数日頂いておりますので、今しばらくお待ち下さい。</p>
-				</div><!--/content3-->
+				</div><!--/content2-->
 
 			</div><!--/.check-form-slide-->
 

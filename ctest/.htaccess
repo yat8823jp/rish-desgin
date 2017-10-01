@@ -1,0 +1,7 @@
+AuthType Basic
+AuthName "Please enter your password"
+AuthUserFile //var/www/html/rish-design/ctest/.htpasswd
+require valid-user
+<Files ~ "^\.(htaccess|htpasswd)$">
+	deny from all
+</Files>
