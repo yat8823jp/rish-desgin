@@ -120,6 +120,11 @@
 				      <td data-price="item">下層ページ（1P）</td>
 				      <td data-price="price">30,000円〜</td>
 				    </tr>
+						<tr>
+				      <td></td>
+				      <td data-price="item">テンプレートページ</td>
+				      <td data-price="price">30,000円〜</td>
+				    </tr>
 				    <tr>
 				      <td></td>
 				      <td data-price="item">バナー作成</td>
